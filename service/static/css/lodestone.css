@@ -1,0 +1,66 @@
+.dl-horizontal dt {
+    width: 350px;
+}
+.dl-horizontal dd {
+    margin-left: 380px;
+    margin-bottom: 5px;
+}
+.success {
+    color: green;
+}
+.failure {
+    color: red;
+}
+.capitalize {
+    text-transform:capitalize;
+}
+
+.alerted {
+    color:'red';
+    background-color:'red';
+    border: 1px solid red;
+    outline: 1px solid red;
+}
+
+.bar {
+    height: 18px;
+    background: green;
+}
+
+.select2-container {
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+
+#s2id_keywords {
+    height: 200px;
+}
+
+#s2id_keywords ul {
+    height: 200px !important;
+}
+
+.tool {
+    color: #ff0000;
+    cursor: hand;
+}
+
+#visible_tooltip {
+    border: 5px solid #cccccc;
+    padding: 5px;
+    background-color: #ffffff;
+    width: 250px;
+}
+
+.select2-container.parsley-error ul {
+    color: #B94A48;
+    background-color: #F2DEDE;
+    border: 1px solid #EED3D7;
+    background-image:none;
+}
+
+.parsley-required, .parsley-requiredIfChecked {
+    font-weight: bold;
+    color: #B94A48;
+}

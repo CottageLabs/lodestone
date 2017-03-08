@@ -1,0 +1,189 @@
+<mets ID="theses_mets" OBJID="theses_uuid" TYPE="DSPace ITEM" PROFILE="DSpace METS SIP Profile 1.0"
+      xmlns="http://www.loc.gov/METS/"
+      xmlns:dim="http://www.dspace.org/xmlns/dspace/dim"
+      xmlns:premis="http://www.loc.gov/standards/premis"
+      xmlns:rights="http://cosimo.stanford.edu/sdr/metsrights/"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd">
+
+    <metsHdr CREATEDATE="2016-07-27T00:00:00Z">
+        <agent ROLE="CREATOR" TYPE="OTHER" OTHERTYPE="Lodestone">
+            <name>Lodestone</name>
+        </agent>
+    </metsHdr>
+
+    <dmdSec ID="dmdSec_1">
+        <mdWrap MDTYPE="OTHER" OTHERMDTYPE="DIM">
+            <xmlData>
+                <dim:dim dspaceType="ITEM">
+                    <!-- when working with a thesis -->
+                    <dim:field mdschema="dc" element="contributor" qualifier="author">Family, Given</dim:field>
+                    <dim:field mdschema="dc" element="contributor" qualifier="orcid">authors.orcid</dim:field>
+                    <dim:field mdschema="dc" element="publisher" qualifier="institution">Awarding Institution</dim:field>
+                    <dim:field mdschema="dc" element="publisher" qualifier="college">College</dim:field>
+                    <dim:field mdschema="dc" element="publisher" qualifier="department">Faculty/Department</dim:field>
+                    <dim:field mdschema="dc" element="type" qualifier="qualificationlevel">Qualification Level</dim:field>
+                    <dim:field mdschema="dc" element="type" qualifier="qualificationname">Degree</dim:field>
+                    <dim:field mdschema="dc" element="type" qualifier="qualificationtitle">Degree Title</dim:field>
+                    <dim:field mdschema="dc" element="title">Thesis Title</dim:field>
+                    <dim:field mdschema="dc" element="date" qualifier="issued">Date Awarded</dim:field>
+                    <dim:field mdschema="dc" element="description" qualifier="abstract">Abstract</dim:field>
+                    <dim:field mdschema="dc" element="subject">Keyword</dim:field>
+                    <dim:field mdschema="dc" element="description" qualifier="sponsorship">Funding/Sponsorship</dim:field>
+                    <dim:field mdschema="dc" element="rights" qualifier="general">3rd Party Rights</dim:field>
+                    <dim:field mdschema="dc" element="rights">CC Licence Name</dim:field>
+                    <dim:field mdschema="dc" element="language" qualifier="iso">Primary Language</dim:field>
+                    <dim:field mdschema="dc" element="description">Description</dim:field>
+                    <dim:field mdschema="dc" element="rights" qualifier="uri">CC URL</dim:field>
+
+                    <dim:field mdschema="rioxxterms" element="licenseref" qualifier="startdate">Licence start date | embargo lift date</dim:field>
+
+                    <!-- when working with research data -->
+                    <dim:field mdschema="dc" element="title">title</dim:field>
+                    <dim:field mdschema="dc" element="contributor" qualifier="author">authors.last_name, authors.first_name</dim:field>
+                    <dim:field mdschema="dc" element="contributor" qualifier="orcid">authors.last_name, authors.first_name [authors.orcid]</dim:field>
+                    <dim:field mdschema="dc" element="description">description</dim:field>
+                    <dim:field mdschema="dc" element="subject">keywords (one dim element per keyword)</dim:field>
+                    <dim:field mdschema="dc" element="publisher" qualifier="institution">department</dim:field>
+                    <dim:field mdschema="dc" element="rights">licence.name OR rights (if licence.name is specified, use that)</dim:field>
+                    <dim:field mdschema="dc" element="rights" qualifier="uri">licence.uri OR appropriate URI for licence name</dim:field>
+                    <dim:field mdschema="dc" element="accessrights">accessrights</dim:field>
+
+                    <dim:field mdschema="datacite" element="iscitedby" qualifier="doi">iscitedby (if value is a DOI)</dim:field>
+                    <dim:field mdschema="datacite" element="iscitedby" qualifier="url">iscitedby (if value is not a DOI)</dim:field>
+                    <dim:field mdschema="datacite" element="contributor" qualifier="supervisor">authors.last_name, authors.first_name</dim:field>
+                </dim:dim>
+            </xmlData>
+        </mdWrap>
+    </dmdSec>
+
+    <amdSec ID="amdSec_1">
+        <techMD ID="techMD_1">
+            <mdWrap MDTYPE="PREMIS">
+                <xmlData xsi:schemaLocation="http://www.loc.gov/standards/premis http://www.loc.gov/standards/premis/PREMIS-v1-0.xsd">
+                    <premis:premis>
+                        <premis:object>
+                            <premis:objectCharacteristics>
+				<!-- optional -->
+                                <premis:fixity>
+                                    <premis:messageDigestAlgorithm>MD5</premis:messageDigestAlgorithm>
+                                    <premis:messageDigest>499b0e1e3936582ca4981163db5442b9</premis:messageDigest>
+                                </premis:fixity>
+				<!-- optional -->
+                                <premis:size>10201</premis:size>
+                                <premis:format>
+                                    <premis:formatDesignation>
+                                        <premis:formatName>application/pdf</premis:formatName>
+                                    </premis:formatDesignation>
+                                </premis:format>
+                            </premis:objectCharacteristics>
+                            <premis:originalName>pdf1.pdf</premis:originalName>
+                        </premis:object>
+                    </premis:premis>
+                </xmlData>
+            </mdWrap>
+        </techMD>
+        <rightsMD ID="rightsMD_1">
+            <mdWrap MDTYPE="OTHER" OTHERMDTYPE="METSRIGHTS">
+                <xmlData xsi:schemaLocation="http://cosimo.stanford.edu/sdr/metsrights/ http://cosimo.stanford.edu/sdr/metsrights.xsd">
+                    <rights:RightsDeclarationMD RIGHTSCATEGORY="LICENSED">
+                        <rights:Context CONTEXTCLASS="GENERAL PUBLIC" end-date="2017-01-01" rpName="Embargoed Bitstream">
+                            <rights:Permissions DISCOVER="false" DISPLAY="false" MODIFY="false" DELETE="false"/>
+                        </rights:Context>
+                        <rights:Context CONTEXTCLASS="GENERAL PUBLIC" start-date="2017-01-01" rpName="Public Bitstream">
+                            <rights:Permissions DISCOVER="true" DISPLAY="true" MODIFY="false" DELETE="false"/>
+                        </rights:Context>
+                    </rights:RightsDeclarationMD>
+                </xmlData>
+            </mdWrap>
+        </rightsMD>
+        <sourceMD ID="sourceMD_1">
+            <mdWrap MDTYPE="OTHER" OTHERMDTYPE="AIP-TECHMD">
+                <xmlData>
+                    <dim:dim dspaceType="BITSTREAM">
+                        <dim:field mdschema="dc" element="title">pdf1.pdf</dim:field>
+                        <dim:field mdschema="dc" element="description">This is a description of the file</dim:field>
+                        <dim:field mdschema="dc" element="format" qualifier="mimetype">application/pdf</dim:field>
+                        <dim:field mdschema="dc" element="format">Software name</dim:field>
+                    </dim:dim>
+                </xmlData>
+            </mdWrap>
+        </sourceMD>
+    </amdSec>
+
+    <amdSec ID="amdSec_2">
+        <techMD ID="techMD_2">
+            <mdWrap MDTYPE="PREMIS">
+                <xmlData xsi:schemaLocation="http://www.loc.gov/standards/premis http://www.loc.gov/standards/premis/PREMIS-v1-0.xsd">
+                    <premis:premis>
+                        <premis:object>
+                            <premis:objectCharacteristics>
+                                <!-- COULD KEEP IF USEFUL <premis:fixity>
+                                    <premis:messageDigestAlgorithm>MD5</premis:messageDigestAlgorithm>
+                                    <premis:messageDigest>499b0e1e3936582ca4981163db5442b9</premis:messageDigest>
+                                </premis:fixity> -->
+                                <!-- <premis:size>10201</premis:size> -->
+                                <premis:format>
+                                    <premis:formatDesignation>
+                                        <premis:formatName>text/plain</premis:formatName>
+                                    </premis:formatDesignation>
+                                </premis:format>
+                            </premis:objectCharacteristics>
+                            <premis:originalName>confirmations.txt</premis:originalName>
+                        </premis:object>
+                    </premis:premis>
+                </xmlData>
+            </mdWrap>
+        </techMD>
+        <rightsMD ID="rightsMD_2">
+            <mdWrap MDTYPE="OTHER" OTHERMDTYPE="METSRIGHTS">
+                <xmlData xsi:schemaLocation="http://cosimo.stanford.edu/sdr/metsrights/ http://cosimo.stanford.edu/sdr/metsrights.xsd">
+                    <rights:RightsDeclarationMD RIGHTSCATEGORY="LICENSED"> <!-- maybe we don't need the RIGHTSCATEGORY -->
+                        <rights:Context CONTEXTCLASS="GENERAL PUBLIC" rpName="Not for Public Consumption">
+                            <rights:Permissions DISCOVER="false" DISPLAY="false" MODIFY="false" DELETE="false"/>
+                        </rights:Context>
+                        <rights:Context CONTEXTCLASS="REPOSITORY MGR" rpName="Admin Only">
+                            <rights:Permissions DISCOVER="true" DISPLAY="true" MODIFY="false" DELETE="false"/>
+                        </rights:Context>
+                    </rights:RightsDeclarationMD>
+                </xmlData>
+            </mdWrap>
+        </rightsMD>
+        <sourceMD ID="sourceMD_2">
+            <mdWrap MDTYPE="OTHER" OTHERMDTYPE="AIP-TECHMD">
+                <xmlData>
+                    <dim:dim dspaceType="BITSTREAM">
+                        <dim:field mdschema="dc" element="title">confirmations.txt</dim:field>
+                        <dim:field mdschema="dc" element="description">Confirmations regarding 3rd Party copyright by the depositor</dim:field>
+                        <dim:field mdschema="dc" element="format" qualifier="mimetype">text/plain</dim:field>
+                    </dim:dim>
+                </xmlData>
+            </mdWrap>
+        </sourceMD>
+    </amdSec>
+
+    <fileSec>
+        <fileGrp ID="fileGrp_1" USE="CONTENT">
+            <file GROUPID="fileGrp_1" ID="file_1" MIMETYPE="application/pdf" SEQ="1" ADMID="amdSec_1">
+                <FLocat LOCTYPE="URL" xlink:href="pdf1.pdf"/>
+            </file>
+        </fileGrp>
+        <fileGrp ID="fileGrp_2" USE="ADMIN">
+            <file GROUPID="fileGrp_2" ID="file_2" MIMETYPE="text/plain" SEQ="1" ADMID="amdSec_2">
+                <FLocat LOCTYPE="URL" xlink:href="confirmations.txt"/>
+            </file>
+        </fileGrp>
+    </fileSec>
+
+    <structMap ID="structMap_1" LABEL="structure" TYPE="LOGICAL">
+        <div ID="structMap_div_1" DMDID="dmdSec_1" TYPE="DSpace Object">
+            <div ID="structMap_div_2">
+                <fptr FILEID="file_1"/>
+            </div>
+            <div ID="structMap_div_3">
+                <fptr FILEID="file_2"/>
+            </div>
+        </div>
+    </structMap>
+</mets>

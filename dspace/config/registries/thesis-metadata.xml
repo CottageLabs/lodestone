@@ -1,0 +1,174 @@
+<?xml version="1.0"?>
+
+<dspace-dc-types>
+
+    <dspace-header>
+        <title>Metadata Types Registry for Theses</title>
+        <contributor.author>Richard Jones</contributor.author>
+        <date.created>2016-07-28</date.created>
+        <description>
+            This file contains bibliographic metadata explicitly required by the
+            Theses deposit interface
+        </description>
+    </dspace-header>
+
+    <dc-schema>
+        <name>dc</name>
+        <namespace>http://dublincore.org/documents/dcmi-terms/</namespace>
+    </dc-schema>
+
+    <dc-schema>
+        <name>rioxxterms</name>
+        <namespace>http://www.rioxx.net/schema/v2.0/rioxxterms/</namespace>
+    </dc-schema>
+
+    <dc-type>
+        <schema>dc</schema>
+        <element>contributor</element>
+        <qualifier>author</qualifier>
+        <scope_note>Family, Given</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>dc</schema>
+        <element>contributor</element>
+        <qualifier>orcid</qualifier>
+        <scope_note>ORCID</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>dc</schema>
+        <element>format</element>
+        <scope_note>software used to create one or more of the files</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>dc</schema>
+        <element>publisher</element>
+        <qualifier>institution</qualifier>
+        <scope_note>Awarding Institution</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>dc</schema>
+        <element>publisher</element>
+        <qualifier>college</qualifier>
+        <scope_note>College</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>dc</schema>
+        <element>publisher</element>
+        <qualifier>department</qualifier>
+        <scope_note>Faculty/Department</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>dc</schema>
+        <element>type</element>
+        <scope_note>Item type (e.g. Thesis)</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>dc</schema>
+        <element>type</element>
+        <qualifier>qualificationlevel</qualifier>
+        <scope_note>Qualification Level</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>dc</schema>
+        <element>type</element>
+        <qualifier>qualificationname</qualifier>
+        <scope_note>Degree</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>dc</schema>
+        <element>type</element>
+        <qualifier>qualificationtitle</qualifier>
+        <scope_note>Degree Title</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>dc</schema>
+        <element>title</element>
+        <scope_note>Thesis Title</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>dc</schema>
+        <element>date</element>
+        <qualifier>issued</qualifier>
+        <scope_note>Date Awarded</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>dc</schema>
+        <element>description</element>
+        <qualifier>abstract</qualifier>
+        <scope_note>Abstract</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>dc</schema>
+        <element>subject</element>
+        <scope_note>Keyword</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>dc</schema>
+        <element>description</element>
+        <qualifier>sponsorship</qualifier>
+        <scope_note>Funding/Sponsorship</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>dc</schema>
+        <element>rights</element>
+        <qualifier>general</qualifier>
+        <scope_note>3rd Party Rights</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>dc</schema>
+        <element>rights</element>
+        <scope_note>CC Licence Name</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>dc</schema>
+        <element>language</element>
+        <qualifier>iso</qualifier>
+        <scope_note>Primary Language</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>dc</schema>
+        <element>description</element>
+        <scope_note>Description</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>dc</schema>
+        <element>format</element>
+        <scope_note>Software Name</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>dc</schema>
+        <element>rights</element>
+        <qualifier>uri</qualifier>
+        <scope_note>CC URL</scope_note>
+    </dc-type>
+
+
+    <dc-type>
+        <schema>rioxxterms</schema>
+        <element>licenseref</element>
+        <qualifier>startdate</qualifier>
+        <scope_note>Licence start date | embargo lift date</scope_note>
+    </dc-type>
+
+
+</dspace-dc-types>

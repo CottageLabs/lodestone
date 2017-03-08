@@ -1,0 +1,1 @@
+../../../../service/static/vendor/js/bootstrap.js

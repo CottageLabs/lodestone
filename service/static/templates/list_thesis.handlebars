@@ -1,0 +1,77 @@
+<div class="page-header">
+    <div class="pull-left">
+        <h1>List of eTheses</h1>
+    </div>
+    <div class="pull-right">
+        <h3 class="text-right"><a href="{{add_item_link}}">Add Thesis</a></h3>
+    </div>
+    <div class="clearfix"></div>
+</div>
+
+<div class="content">
+    <div id="submitted" style="display:none">
+        <div class="col-md-12">
+            <div class="alert alert-success">
+                <p>Thank you very much for submitting your thesis to the University research repository.</p>
+
+                <p>If you have any questions about your thesis submission, please e-mail us at <a href="mailto:support@repository.xxxxxxx.ac.uk">support@repository.xxxxxxx.ac.uk</a></p>
+
+                <p>Best wishes,</p>
+
+                <p>eTheses Repository Team<br>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{#if data.length}}
+<table class="table table-striped table-bordered">
+    <thead>
+    <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Files</th>
+        <th>Last Updated</th>
+        <th>Status</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{#each data}}
+        <tr>
+            <td><a href="{{../show_item_link}}?id={{id}}">
+                {{#if title}}
+                    {{title}}
+                {{else}}
+                    {{id}}
+                {{/if}}
+            </a></td>
+            <td>
+                {{#each authors}}
+                    <p>{{given_names}} {{family_name}}</p>
+                {{/each}}
+            </td>
+            <td>
+                {{#each files}}
+                    {{#if visible}}
+                        <p><a href="{{access_url}}">{{file_name}}</a></p>
+                    {{/if}}
+                {{/each}}
+            </td>
+            <td>{{human_last_updated}}</td>
+            <td>
+                {{#if remote_repository_url}}
+                    <a href="{{remote_repository_url}}">{{status.display}}</a>
+                {{else}}
+                    {{status.display}}
+                {{/if}}
+
+                {{#if status.editable }}
+                    <a href="{{../add_item_link}}?id={{id}}">(edit)</a>
+                {{/if}}
+            </td>
+        </tr>
+    {{/each}}
+    </tbody>
+</table>
+{{/if}}

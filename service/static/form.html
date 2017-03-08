@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Thesis form</title>
+    <meta name="description" content="">
+    <meta name="author" content="Cottage Labs">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" src="//static.cottagelabs.com/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="//static.cottagelabs.com/jquery-ui-1.11.4/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="//static.cottagelabs.com/jquery-ui-1.11.4/jquery-ui.min.css">
+    <script type="text/javascript" src="//static.cottagelabs.com/bootstrap-3.0.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="//static.cottagelabs.com/bootstrap-3.0.3/css/bootstrap.min.css">
+
+    <script type="text/javascript" src="//static.cottagelabs.com/jQuery-File-Upload-9.12.5/js/vendor/jquery.ui.widget.js"></script>
+    <script type="text/javascript" src="//static.cottagelabs.com/jQuery-File-Upload-9.12.5/js/jquery.iframe-transport.js"></script>
+    <script type="text/javascript" src="//static.cottagelabs.com/jQuery-File-Upload-9.12.5/js/jquery.fileupload.js"></script>
+    
+    <style>
+      .alerted {
+        color:'red';
+        background-color:'red';
+        border: 1px solid red;
+        outline: 1px solid red;
+      }
+      .bar {
+        height: 18px;
+        background: green;
+      }
+    </style>
+    
+  </head>
+
+  <body style="padding-top:50px;">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Lodestone</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="/static/list_thesis.html">eTheses</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <div class="container" style="width:900px;">
+      <div class="row">
+        <div class="col-md-12">
+            <h1>
+              Contribute your digital thesis
+            </h1>            
+          </div>
+
+          <p>
+            To submit your digital thesis, please complete all sections of the below form (fields marked with a * are compulsory). 
+            If you need assistance completing this form, please email the Office of Scholarly Communication at <a href="mailto:info@osc.xxxxxxx.ac.uk" target="_blank">info@osc.xxxxxxx.ac.uk</a>.
+          </p>
+          
+          <h2>
+            Personal information
+          </h2>
+          
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label for="authors___given_names" class="control-label col-md-4">Given names *</label>
+              <div class="col-md-7">
+                <input type="text" class="form-control" id="authors___given_names">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="authors___family_name" class="control-label col-md-4">Family name *</label>
+              <div class="col-md-7">
+                <input type="text" class="form-control" id="authors___family_name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="authors___crsid" class="control-label col-md-4">
+                CRSid <br>
+                <small style="font-weight:normal;">e.g. abc123</small>
+              </label>
+              <div class="col-md-7">
+                <input type="text" class="form-control" id="authors___crsid">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="authors___email_id" class="control-label col-md-4">
+                Non-Institutional email address*<br>
+                <small style="font-weight:normal;">Please provide an email address that is unlikely to change if you move to a new institution or employer, in case we need to contact you regarding your thesis in the future.</small>
+              </label>
+              <div class="col-md-7">
+                <input type="text" class="form-control" id="authors___email_id">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="awarding_institution" class="control-label col-md-4">Awarding Institution *</label>
+              <div class="col-md-7">
+                <select class="form-control" id="awarding_institution">
+                  <option></option>
+                  <option>University of XXXXXX</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group" style="display:none;" id="ask_college">
+              <label for="college" class="control-label col-md-4">College</label>
+              <div class="col-md-7">
+                <input type="text" class="form-control" id="college">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="faculty" class="control-label col-md-4">
+                Faculty / Department *<br>
+                <small style="font-weight:normal;">Please enter the Faculty or Department from which your thesis was awarded.</small>
+              </label>
+              <div class="col-md-7">
+                <input type="text" class="form-control" id="faculty">
+              </div>
+            </div>
+          </form>
+ 
+
+
+          
+          
+          <h2>
+            Supervisor information            
+          </h2>
+
+          <form class="form-horizontal">
+            <div id="supervisors_block">
+              <div class="form-group">
+                <label for="supervisors___given_names" class="control-label col-md-4">Supervisor's given names *</label>
+                <div class="col-md-7">
+                  <input type="text" class="form-control" id="supervisors___0___given_names">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="supervisors___family_name" class="control-label col-md-4">Supervisor's Family name *</label>
+                <div class="col-md-7">
+                  <input type="text" class="form-control" id="supervisors___0___family_name">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="supervisors___orcid" class="control-label col-md-4">Supervisor's ORCID</label>
+                <div class="col-md-7">
+                  <input type="text" class="form-control" id="supervisors___0___orcid">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-7 col-md-offset-4">
+                <button class="btn btn-primary addanother" id="another_supervisors">Add another supervisor</button>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-7 col-md-offset-4">
+                <p>
+                  You can add up to five supervisors in total.
+                </p>
+              </div>
+            </div>
+          </form>
+
+
+          
+          
+          
+          <h2>
+            Thesis information
+          </h2> 
+
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label for="qualification_level" class="control-label col-md-4">Qualification level *</label>
+              <div class="col-md-7">
+                <select class="form-control" id="qualification_level">
+                  <option></option>
+                  <option>Doctoral</option>
+                  <option>Higher Doctorate</option>
+                  <option>Masters</option>
+                  <option>Other Postgraduate</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="degree" class="control-label col-md-4">Degree *</label>
+              <div class="col-md-7">
+                <select class="form-control" id="degree">
+                  <option></option>
+                  <optgroup label="Doctoral">
+                    <option>Doctor of Philosophy (PhD)</option>
+                    <option>Doctor of Education (EdD)</option>
+                    <option>Doctor of Engineering (EngD)</option>
+                    <option>Doctor of Medicine (MD)</option>
+                    <option>Doctor of Veterinary Medicine (VetMD)</option>
+                  </optgroup>
+                  <optgroup label="Higher Doctorate">
+                    <option>Doctor of Law (LLD)</option>
+                    <option>Doctor of Letters (LittD)</option>
+                    <option>Doctor of Science (ScD)</option>
+                    <option>Doctor of Music (MusD)</option>
+                    <option>Doctor of Divinity (DD)</option>
+                    <option>Doctor of Medical Science (MedScD)</option>
+                  </optgroup>
+                  <optgroup label="Masters">
+                    <option>Master of Philosophy (MPhil)</option>
+                    <option>Master of Advanced Study (MASt)</option>
+                    <option>Master of Business Administration (MBA)</option>
+                    <option>Executive Master of Business Administration (EMBA)</option>
+                    <option>Master of Corporate Law (MCL)</option>
+                    <option>Master of Education (MEd)</option>
+                    <option>Master of Engineering (MEng)</option>
+                    <option>Master of Finance (MFin)</option>
+                    <option>Master of Law (LLM)</option>
+                    <option>Master of Letters (MLitt)</option>
+                    <option>Master of Mathematics (MMath)</option>
+                    <option>Master of Music (MMus)</option>
+                    <option>Master of Natural Sciences (MSci)</option>
+                    <option>Master of Research (MRes)</option>
+                    <option>Master of Science (MSc)</option>
+                    <option>Master of Studies (MSt)</option>
+                    <option>Master of Surgery (MChir)</option>
+                  </optgroup>
+                  <optgroup label="Other Postgraduate">
+                    <option>Advanced Diploma</option>
+                    <option>Certificate of Postgraduate Study (CPGS)</option>
+                    <option>Postgraduate Advanced Certificate</option>
+                    <option>Postgraduate Award</option>
+                    <option>Postgraduate Certificate in Education (PGCE)</option>
+                    <option>Postgraduate Diploma (PGDip)</option>
+                  </optgroup>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="degree_title" class="control-label col-md-4">
+                Degree title *<br>
+                <small style="font-weight:normal;">Please insert the title of your qualification, e.g. MPhil in American Literature</small>
+              </label>
+              <div class="col-md-7">
+                <input type="text" class="form-control" id="degree_title">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="title" class="control-label col-md-4">
+                Thesis title *<br>
+                <small style="font-weight:normal;">Please insert the title exactly as it appears on the title page of your thesis</small>
+              </label>
+              <div class="col-md-7">
+                <input type="text" class="form-control" id="title">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="date_awarded" class="control-label col-md-4">
+                Date awarded *<br>
+                <small style="font-weight:normal;">If you do not know the exact day, select the first of the month</small>
+              </label>
+              <div class="col-md-7">
+                <input type="text" class="form-control datepicker" id="date_awarded">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="abstract" class="control-label col-md-4">
+                Abstract *<br>
+                <small style="font-weight:normal;">
+                  Please copy and paste your abstract into the box above (maximum 300 words). 
+                  If your abstract includes special characters, e.g. mathematical symbols, you can use <a target="_blank" href="http://www.onemathematicalcat.org/MathJaxDocumentation/TeXSyntax.htm">TeX commands</a> – 
+                  please ensure any TeX commands are placed between two $ signs.
+                </small>
+              </label>
+              <div class="col-md-7">
+                <textarea class="form-control" id="abstract" style="min-height:200px;"></textarea>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="keywords" class="control-label col-md-4">
+                Keywords *<br>
+                <small style="font-weight:normal;">
+                  At least three required, and up to fifty allowed
+                </small>
+              </label>
+              <div class="col-md-7">
+                <div class="row" id="keywords_block" style="margin-bottom:5px;">
+                  <div class="col-md-4">
+                    <input type="text" class="form-control" id="keywords___0">
+                  </div>
+                  <div class="col-md-4">
+                    <input type="text" class="form-control" id="keywords___1">
+                  </div>
+                  <div class="col-md-4">
+                    <input type="text" class="form-control" id="keywords___2">
+                  </div>                  
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-7 col-md-offset-4">
+                <button class="btn btn-primary addanother" id="another_keywords">Add more keywords</button>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="funding" class="control-label col-md-4">
+                Funding / sponsorship<br>
+                <small style="font-weight:normal;">
+                  Please enter information about any other sponsoring agencies, individuals, or contractual arrangements for your thesis.
+                </small>
+              </label>
+              <div class="col-md-7">
+                <textarea class="form-control" id="funding" style="min-height:200px;"></textarea>
+              </div>
+            </div>
+          
+            <h3>Third Party Copyright Agreement</h3> 
+
+            <p>
+              If your thesis includes content created by others, you may well need to seek permission before uploading it to the research repository 
+              <a href="https://www.repository.xxxxxxx.ac.uk/" target="_blank">Repository</a>.
+              Copyright held by someone other than yourself is known as third party copyright. 
+              It is strongly advised that you clear copyright and obtain permissions for use in the University's repository from third party rights holders as you gather your resources,
+              rather than leaving it to the point where you write up your thesis. Find out more about Open Access theses and copyright.
+            </p>
+            <p>
+              If you are unable to obtain permission to make third party copyright material available open access we might still be able to help you. 
+              Contact the <a href="mailto:info@osc.xxxxxxx.ac.uk" target="_blank">info@osc.xxxxxxx.ac.uk</a> team for advice.
+            </p>
+
+            <div class="form-group">
+              <div class="col-md-3 col-md-offset-1">
+                <input type="checkbox" class="form-control" id="open_access_ip_confirmed">
+              </div>
+              <label for="open_access_ip_confirmed" class="control-label col-md-7" style="text-align:left;">
+                I confirm that the open access version of my thesis does not infringe the intellectual property rights of a third party OR that all parties with 
+                a claim to intellectual property contained in any content in my thesis have agreed to the deposit of my thesis in the repository and dissemination online.*
+              </label>
+            </div>
+            <div class="form-group">
+              <div class="col-md-3 col-md-offset-1">
+                <input type="checkbox" class="form-control" id="open_access_confidentiality_confirmed">
+              </div>
+              <label for="open_access_confidentiality_confirmed" class="control-label col-md-7" style="text-align:left;">
+                I confirm that the open access version of my thesis does not contain confidential information or that I have obtained 
+                permission from the authorised party to make the confidential information public.*
+              </label>
+            </div>
+            <div class="form-group">
+              <label for="third_party_copyright_notes" class="control-label col-md-4">
+                Notes on third party copyright material in this thesis<br>
+                <small style="font-weight:normal;">
+                  Please enter any copyright / intellectual property statements regarding rights management.
+                </small>
+              </label>
+              <div class="col-md-7">
+                <textarea class="form-control" id="third_party_copyright_notes" style="min-height:200px;"></textarea>
+              </div>
+            </div>
+            <div class="form-group" id="language_block">
+              <label for="language" class="control-label col-md-4">Primary language *</label>
+              <div class="col-md-7">
+                <select class="form-control" id="language___0">
+                  <option></option>
+                  <option>English</option>
+                  <option>Spanish</option>
+                  <option>German</option>
+                  <option>French</option>
+                  <option>Japanese</option>
+                  <option>Italian</option>
+                  <option>Chinese</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-7 col-md-offset-4">
+                <button class="btn btn-primary addanother" id="another_language">Add another language</button>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-7 col-md-offset-4">
+                <p>
+                  You can add up to three languages in total.
+                </p>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="comments" class="control-label col-md-4">
+                Description<br>
+                <small style="font-weight:normal;">
+                  Please enter any other description or comments in this box.
+                </small>
+              </label>
+              <div class="col-md-7">
+                <textarea class="form-control" id="comments" style="min-height:200px;"></textarea>
+              </div>
+            </div>
+          </form>
+
+
+          
+          
+          
+          <h2>
+            Upload thesis          
+          </h2>
+          
+          <p>
+            Please upload a file containing your thesis. 
+            In addition to your thesis, please include any other documents that you submitted alongside it.            
+            Please ensure any special fonts are embedded in the document. Do not include any spaces or special characters in the filename – use underscores or hyphens instead.
+            Provide a brief description of each file, for example ‘Thesis’, ‘Supplementary material’.
+            If you have included any files of a non-standard format, please indicate the name of the software needed to read your files or any other information 
+            that someone might find useful when trying to open/process your files.
+          </p>
+
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label for="file" class="control-label col-md-4">Choose file</label>
+              <div class="col-md-7">
+                <input id="fileupload" class="form-control" type="file" name="file">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="file_description" class="control-label col-md-4">File description</label>
+              <div class="col-md-7">
+                <input type="text" class="form-control" id="file_description">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="file_software" class="control-label col-md-4">Software</label>
+              <div class="col-md-7">
+                <input type="text" class="form-control" id="file_software">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-7 col-md-offset-4">
+                <span id="upload_button"></span>
+              </div>
+            </div>
+          </form>
+
+          <p>
+            If you have any datasets that support your thesis but were not submitted with it, please submit these via our <a href="http://www.data.xxxxxxx.ac.uk/upload" target="_blank">Data Upload Form</a>.
+          </p>
+          
+          
+          
+          
+
+          <h2>
+            Access to your digital thesis
+          </h2>
+          
+          <p>
+            If your degree was funded from an RCUK training grant, you are required to make your thesis openly available either immediately, or within one year. 
+            Please see the <a href="http://osc.xxxxxxx.ac.uk/open-access/open-access-policies#rcuk_students" target="_blank">Open Access Policies</a> webpage for further information.
+          </p>
+          
+          <p>
+            Some faculties and departments additionally require access to your digital thesis to be restricted, either temporarily or indefinitely; please check with your Administrator if you are unsure.
+          </p>
+          
+          <p>
+            Otherwise, you have the option to make the digital version of your thesis openly available, or to apply a temporary or indefinite access restriction. 
+            Please note that any of the restriction options below will only apply to the digital version of your thesis; information about requesting a restriction 
+            to the hard copy of your thesis can be found on the 
+            <a href="http://www.xxxxxxxx.ac.uk/your-course" target="_blank">Student Registry</a> website.
+          </p>
+
+          <p>
+            You may wish to select one of the restricted options if your thesis contains restricted information ? or if you are planning on publishing all or part of your thesis in the near future. 
+            If your degree was funded from an RCUK training grant, but you would like to temporarily restrict access to the digital version, please select the one year option.            
+          </p>
+          
+          <p>
+            Restrictions (embargoes) may be placed on theses which contain commercial, personal, confidential, or otherwise sensitive or restricted information, 
+            preventing them from being accessed in full or part until a set period of time has passed, when it is judged that the benefit of making the thesis 
+            openly available outweighs any risk.
+          </p>
+          
+          <p>
+            Please select one of the following *
+          </p>
+          
+          <form class="form-horizontal">
+            <div class="form-group">
+              <div class="col-md-3 col-md-offset-1">
+                <input type="radio" name="restrict" class="form-control restrict" id="restrict_indefinite">
+              </div>
+              <label for="restrict_indefinite" class="control-label col-md-7" style="text-align:left;">
+                Restrict access to the digital version of your thesis indefinitely<br>
+                <small style="font-weight:normal;">
+                  If you select this option, your digital thesis will be made available under the same conditions as the hard copy version in the University Library. 
+                  Requestors are required to sign a 
+                  <a href="http://osc.xxxxxxx.ac.uk/files/dcucopyrightdeclaration.pdf" target="_blank">declaration</a> stating whether the research for which they wish to consult a thesis is private study or non-commercial.
+                </small>
+              </label>
+            </div>
+            <div class="form-group">
+              <div class="col-md-3 col-md-offset-1">
+                <input type="radio" name="restrict" class="form-control restrict" id="restrict_two">
+              </div>
+              <label for="restrict_two" class="control-label col-md-7" style="text-align:left;">
+                Restrict access to the digital version of your thesis for a period of two years
+              </label>
+            </div>
+            <div class="form-group">
+              <div class="col-md-3 col-md-offset-1">
+                <input type="radio" name="restrict" class="form-control restrict" id="restrict_one">
+              </div>
+              <label for="restrict_one" class="control-label col-md-7" style="text-align:left;">
+                Restrict access to the digital version of your thesis for a period of one year
+              </label>
+            </div>
+            <div class="form-group" id="ask_restrict_reason" style="display:none;">
+              <label for="restrict_reason" class="control-label col-md-4">
+                Reason for restriction<br>
+                <small style="font-weight:normal;">
+                  Please provide some information on why you have chosen to restrict access to the electronic version of your thesis. 
+                  This is for internal use only and will not be visible on the repository record for your thesis.
+                </small>
+              </label>
+              <div class="col-md-7">
+                <textarea class="form-control" id="restrict_reason" style="min-height:200px;"></textarea>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-3 col-md-offset-1">
+                <input type="radio" name="restrict" class="form-control restrict" id="restrict_none">
+              </div>
+              <label for="restrict_none" class="control-label col-md-7" style="text-align:left;">
+                Immediately make the digital version of your thesis openly available
+              </label>
+            </div>
+          </form>
+
+          <div id="ask_cc" style="display:none;">
+            <p>
+              <b>Creative Commons Licence</b>: you may optionally add a <a href="http://creativecommons.org/" target="_blank">Creative Commons</a> Licence to your thesis. Creative Commons licences govern what people who read your work may then do with it.
+              If you have chosen to restrict access to your thesis for one or two years, the Creative Commons licence will become active on the date that your thesis becomes openly available.
+              If you do not choose a Creative Commons Licence, your thesis will be published online as ‘All rights reserved’, which means that you, the copyright holder, retain all rights 
+              to the thesis unless you specifically give someone else permission to e.g. copy, distribute, or display it.
+            </p>
+
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label for="license" class="control-label col-md-4">
+                  Creative Commons Licence
+                </label>
+                <div class="col-md-7">
+                  <select class="form-control" id="license">
+                    <option></option>
+                    <option>No Creative Commons licence (All rights reserved)</option>
+                    <option>CC BY-NC-ND (Attribution-NonCommercialNoDerivs)</option>
+                    <option>CC BY-NC-SA (Attribution-NonCommercial-ShareAlike)</option>
+                    <option>CC BY-NC (Attribution-NonCommercial)</option>
+                    <option>CC BY-ND (Attribution-NoDerivs)</option>
+                    <option>No Creative Commons Licence</option>
+                    <option>CC BY-SA (Attribution-ShareAlike)</option>
+                    <option>CC BY (Attribution)</option>
+                  </select>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          
+          
+          
+          
+          <h2>
+            Authenticity Statement            
+          </h2>
+          
+          <form class="form-horizontal">
+            <div class="form-group">
+              <div class="col-md-3 col-md-offset-1">
+                <input type="checkbox" class="form-control" id="authenticity_agreement">
+              </div>
+              <label for="authenticity_agreement" class="control-label col-md-7" style="text-align:left;">
+                I certify that this is a direct digital equivalent of the copy of my thesis approved by the University for the award of the degree. 
+                No emendation of content has occurred, and if there are any minor variations in formatting, they are a result of the conversion to Adobe Acrobat format.
+              </label>
+            </div>
+          </form>
+
+
+          
+          
+          
+          <h2>
+            Distribution Licence
+          </h2>
+          
+          <p><i>
+            This document is a contract between you and the University, which constitutes your permission to deposit, archive, preserve and make your submission ("Research Outputs")
+            available in the University Repository on the terms set out below. References to the Repository include any successor repository designated by the University.
+          </i></p>
+          
+          <ol>
+            <li>
+              <b>Licence Grant</b>. In consideration of the University (the “University”) preserving Research Outputs in the University institutional repository (the "Repository"),
+              I hereby grant to the University a non-exclusive, sublicensable, worldwide, perpetual and royalty-free licence to use and reproduce these Research Outputs in any medium or format for the 
+              purposes of archiving, preservation and migration of Research Outputs in the Repository and, subject to any agreed publication delay or embargo or restricted access, to communicate and make 
+              available to the public Research Outputs in the Repository under the terms of this Licence and any licence or other terms that may be specified in the Repository deposit submission process 
+              and/or that Research Outputs may be tagged with or otherwise released under in the Repository.
+            </li>
+            <li>
+              <b>Depositor Warranties</b>. I represent and warrant that:
+              <ol>
+                <li>
+                  I have the full power and authority to enter into this Agreement and am duly authorised by all rights holder/s Research Outputs to deposit or authorise the deposit of Research Outputs in the 
+                  Repository and grant the licence in this Agreement;
+                </li>
+                <li>
+                  Research Outputs are original work and do not, to the best of my knowledge, infringe the intellectual property rights, including copyright, of any third party, nor contain any confidential 
+                  information, personal and/or restricted data;
+                </li>
+                <li>
+                  jointly owned or third party copyright material, i.e. others’ work, included in Research Outputs, is clearly identified and acknowledged and sufficient and appropriate permissions have been secured 
+                  for the material to be reproduced and made available on the licence terms Research Outputs are released under in the Repository; and
+                </li>
+                <li>
+                  the grant of rights in this Agreement does not constitute a breach of any other agreement, publishing or otherwise, including any confidentiality or publication restriction provisions in sponsorship, 
+                  or United Kingdom export control law, or collaboration agreements governing my research or work (or that of those who have authorised me to grant rights given in this Agreement on their behalf) 
+                  at the University or elsewhere.
+                </li>
+              </ol>
+            </li>
+            <li>
+              <b>University Repository Policy</b>. I acknowledge and agree that I have read and understood the University Repository Terms of Use at 
+              <a href="http://www.repository.xxxxxxx.ac.uk/" target="_blank">www.repository.xxxxxxx.ac.uk</a> and that my
+              deposit of Research Outputs complies with those terms. I acknowledge that the University Repository Terms of Use may be amended from time to time and that then current 
+              policies will apply to my submission.
+            </li>
+            <li>
+              Governing Law and Jurisdiction. This Agreement and all questions of construction, validity and performance under this Agreement shall be governed by English law and subject to 
+              the exclusive jurisdiction of the English courts.
+            </li>
+          </ol>
+
+          <p>
+            If you have questions regarding this licence, please contact the system administrators at <a href="mailto:support@repository.xxxxxxx.ac.uk" target="_blank">support@repository.xxxxxxx.ac.uk</a>.
+          </p>
+
+          <form class="form-horizontal" style="margin-bottom:50px;">
+            <div class="form-group">
+              <div class="col-md-3 col-md-offset-1">
+                <input type="checkbox" class="form-control" id="distribution_license">
+              </div>
+              <label for="distribution_license" class="control-label col-md-7" style="text-align:left;">
+                I grant the above Licence *
+              </label>
+            </div>
+            <div class="form-group">
+              <div class="col-md-3 col-md-offset-1">
+                <a id="submit" class="btn btn-success" href="#">Submit</a>
+              </div>
+              <label for="submit" class="control-label col-md-7 submitstatus" style="text-align:left;">
+                Complete all the required fields above then submit this form<br>
+                <span id="alerting" style="display:none;color:red;">NOTE: you have missed out some required fields, please check above and try again.</span><br>
+                <span id="submit_result"></span>
+              </label>
+            </div>
+          </form>
+        
+        
+        </div>
+      </div>
+    </div>
+
+  </body>
+  
+  <script>
+  jQuery(document).ready(function() {
+    var uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+      var r = Math.random()*16|0, v = c == 'x' ? r : (r&0x3|0x8);
+      return v.toString(16);
+    });
+
+    // file upload handling
+    $(function () {
+      $('#fileupload').fileupload({
+        url: '/ethesis/' + uuid + '/files',
+        dataType: 'json',
+        formData: function() {
+          var ret = [{name:'file_description',value:$('#file_description').val()},{name:'software',value:$('#file_software').val()}];
+          console.log(ret);
+          return ret;
+        },
+        add: function (e, data) {
+          data.context = $('<button class="btn btn-success" id="trigger_upload" />').text('Upload this file')
+            .appendTo('#upload_button')
+            .click(function () {
+                data.context = $('<p/>').text('Uploading...').replaceAll($(this));
+                data.submit();
+            });
+        },
+        done: function (e, data) {
+          console.log(data);
+          if ( data.result ) {
+            if ( data.result.success ) {
+              data.context.text(data.result.data.split('/')[4] + ' uploaded. Choose another file if you want to upload more.');
+              $('#file_description').val("");
+              $('#file_software').val("");
+              $('#trigger_upload').remove();
+            } else {
+              data.context.text('Upload failed');
+            }
+          } else {
+            data.context.text('Upload failed');
+          }
+        }
+      });
+    });
+    
+    // UI functions
+    $('.datepicker').datepicker({dateFormat:'yy-mm-dd'});
+    
+    var college = function() {
+      $('#ask_college').hide();
+      if ( $('#awarding_institution').val() === 'University of XXXXXX' ) $('#ask_college').show();
+    }
+    $('#awarding_institution').bind('change',college);
+    
+    $('#degree optgroup').hide();
+    var level = function() {
+      $('#degree optgroup').hide();
+      if ( $('#qualification_level').val() && $('#qualification_level').val().length ) $('#degree optgroup[label="' + $('#qualification_level').val() + '"]').show();
+    }
+    $('#qualification_level').bind('change',level);
+    
+    var more = {supervisors:1,keywords:1,language:1};
+    var addanother = function(event) {
+      event.preventDefault();
+      var what = $(this).attr('id').replace('another_','');
+      more[what] += 1;
+      if (what === 'supervisors' && more.supervisors < 6 || what === 'language' && more.language < 4 || what === 'keywords' && more.keywords < 17 ) {
+        var newblock = $('.another_' + what + '_last').length ? $('.another_' + what + '_last').clone() : $('#' + what + '_block').clone();
+        var matcher = what === 'language' ? 'select' : 'input';
+        newblock.addClass('another_' + what + '_last');
+        newblock.find(matcher).each(function() {
+          var id = $(this).attr('id');
+          var on = parseInt(id.replace(/[^0-9]/g,''));
+          var nn = what === 'keywords' ? on + 3 : on + 1;
+          var nid = id.replace(on.toString(),nn.toString());
+          $(this).attr('id',nid).val("");
+        });
+        if ( what === 'language' ) newblock.find('label').html('Additional language');
+        if ( $('.another_' + what + '_last').length ) {
+          newblock.insertAfter('.another_' + what + '_last');
+          $('.another_' + what + '_last').first().removeClass('another_' + what + '_last');
+        } else {
+          newblock.insertAfter('#' + what + '_block');
+        }
+        if ( what === 'supervisors' && more.supervisors === 5) {
+          $('#another_supervisors').hide();
+        } else if ( what === 'language'  && more.language === 3) {
+          $('#another_language').hide();          
+        } else if (what === 'keywords' && more.keywords === 16) {
+          $('#another_keywords').hide();
+        }
+      }
+    }
+    $('.addanother').bind('click',addanother);
+    
+    var restrict = function() {
+      $('.restrict').removeClass('alerted');
+      $('#ask_restrict_reason').hide();
+      $('#ask_cc').hide();
+      if ( $('#restrict_indefinite').is(':checked') || $('#restrict_two').is(':checked') || $('#restrict_one').is(':checked') ) $('#ask_restrict_reason').show();
+      if ( $('#restrict_two').is(':checked') || $('#restrict_one').is(':checked') || $('#restrict_none').is(':checked') ) $('#ask_cc').show();
+    }
+    $('.restrict').bind('change',restrict);
+
+    // an example record, for reference
+    var example_record = {
+      'title':'Title of my thesis',
+      'authors': {
+        'given_names': 'Anusha',
+        'family_name': 'Ranganathan',
+        'crsid': 'cami1234',
+        'email_id': 'a@example.com',
+      },
+      'awarding_institution': 'University of XXXXXXX',
+      'college': 'Exeter College',
+      'faculty': 'Department of English',
+      'supervisors': [
+        {
+          'given_names': 'Lord',
+          'family_name': 'Lambourne',
+          'orcid': 'orcid:12345'
+        }, 
+        {
+          'given_names': 'Lady',
+          'family_name': 'Macbeth',
+          'orcid': 'orcid:67890'
+        }
+      ],
+      'qualification_level': 'Doctoral',
+      'degree': 'Doctor of Philosophy (PhD)',
+      'degree_title': 'PhD in English Literature',
+      'date_awarded': '2016-04-30',
+      'abstract': 'A long piece of text is added here spanning multiple lines. This is just one line though',
+      'keywords': [
+        'mythology',
+        'ancient',
+        'Roman',
+        'Greek',
+        'Russian'
+      ],
+      'funding': 'Some text about funding',
+      'agreement_confirmed': false,
+      'open_access_ip_confirmed': true,
+      'open_access_confidentiality_confirmed': true,
+      'third_party_copyright_notes': 'Some notes about third party copyright',
+      'language': 'English',
+      'other_languages': 'French',
+      'comments': '',
+      'access': {
+        'type': 'type of access',
+        'reason': 'Reason of access'
+      },
+      'status': {'code': 'draft'},
+      'license': {
+        'text': 'Some license text',
+        'uri': 'http://example.com/license_url'
+      },
+      'authenticity_agreement': true,
+      'distribution_license': true
+    }
+
+    // form submission requirements
+    
+    // need at least 3 keywords, need authors given_names family_name and email_id, 
+    // need at least one supervisors and given_names and family_name for any that are present
+    // need access type, need language, and need all following keys to exist
+    var required = ['title','awarding_institution','faculty','qualification_level','degree','degree_title',
+      'date_awarded','abstract','open_access_ip_confirmed','open_access_confidentiality_confirmed',
+      'authenticity_agreement','distribution_license'
+    ];
+    
+    var submit = function(record) {
+      // submit to the endpoint
+      // check what happens with files
+      $.ajax({
+        type: "PUT",
+        url: "/ethesis/" + uuid,
+        processData: false,
+        async: false,
+        cache: false,
+        contentType: 'application/json; charset=utf-8',
+        data: JSON.stringify(record),
+        beforeSend: function() {
+          $('#submit_result').html('<p>Submitting, please wait.</p>');
+        },
+        success: function(data) {
+          console.log(data);
+          $('#submit_result').html('<p>Thank you, your thesis has been submitted.</p>');
+        },
+        error: function(data) {
+          console.log(data);
+          $('#submit_result').html('<p>Sorry there was an error with your submission.</p>');          
+        }
+      });
+    }
+
+    var unalert = function() {
+      $(this).removeClass('alerted');
+    }
+    
+    var checksubmit = function(e) {
+      $('.alerted').unbind('change',unalert);
+      $('#alerting').hide();
+      var record = {
+        authors: {},
+        supervisors:[],
+        keywords:[],
+        access: {},
+        agreement_confirmed: false, // don't know what these last two are so setting as example
+        status: {
+          code:'draft'
+        }
+      };
+      e.preventDefault();
+      var missing = [];
+      $('input, select, textarea').each(function() {
+        $(this).removeClass('alerted');
+        var val = $(this).is(':checked') ? true : $(this).val();
+        if ( val === true || val && val.length > 0 && val !== "on" ) {
+          var parts = $(this).attr('id').split('___');
+          var depth = record;
+          for ( var p = 0; p < parts.length; p++ ) {
+            var k = parts[p];
+            if ( p === (parts.length-1)) {
+              if ( isNaN(parseInt(k)) ) {
+                depth[k] = val;
+              } else {
+                depth.push(val);
+              }
+            } else if (depth[k] === undefined) {
+              depth[k] = isNaN(parseInt(parts[p+1])) ? {} : [];
+              depth = depth[k];
+            } else {
+              depth = depth[k];
+            }
+          } 
+        } else {
+          missing.push($(this).attr('id'));
+        }
+      });
+      if (record.language) {
+        // Note anushas example showed other_languages as string but should be list
+        record.other_languages = record.language.length > 1 ? record.language.slice(1,record.language.length) : [];
+        record.language = record.language[0];
+      }
+      if (record.license) record.license = {text:record.license}; // anushas example also had uri in this obj, but I have no data on that
+      if (record.restrict_indefinite) {
+        record.access = {type:'restrict_indefinite'} // I do not know what these types should be, so just using the strings for now
+        delete record.restrict_indefinite;
+      }
+      if (record.restrict_two) {
+        record.access = {type:'restrict_two'}
+        delete record.restrict_two;
+      }
+      if (record.restrict_one) {
+        record.access = {type:'restrict_one'}
+        delete record.restrict_one;
+      }
+      if (record.restrict_none) {
+        record.access = {type:'restrict_none'}
+        delete record.restrict_none;
+      }
+      if (record.reason) {
+        if (record.access) record.access.reason = record.reason;
+        delete record.reason;
+      }
+      if (record.file) delete record.file;
+      if (record.file_description) delete record.file_description;
+      if (record.file_software) delete record.file_software;
+      var alerts = [];
+      for ( var rq in required ) {
+        var req = required[rq];
+        if (record[req] === undefined) alerts.push(req);
+      }
+      if (!record.language) alerts.push('language___0');
+      if (record.keywords.length < 3) alerts.push('keywords___2');
+      if (record.keywords.length < 2) alerts.push('keywords___1');
+      if (record.keywords.length < 1) alerts.push('keywords___0');
+      if (record.authors.given_names === undefined) alerts.push('authors___given_names');
+      if (record.authors.family_name === undefined) alerts.push('authors___family_name');
+      if (record.authors.email_id === undefined) alerts.push('authors___email_id');
+      if (record.access.type === undefined) {
+        alerts.push('restrict_indefinite');
+        alerts.push('restrict_two');
+        alerts.push('restrict_one');
+        alerts.push('restrict_none');
+      }
+      if (record.supervisors.length === 0) {
+        alerts.push('supervisors___0___given_names');
+        alerts.push('supervisors___0___family_name');
+      } else {
+        for ( var s in record.supervisors ) {
+          if (record.supervisors[s].given_names === undefined) alerts.push('supervisors___' + s + '___given_names');
+          if (record.supervisors[s].family_name === undefined) alerts.push('supervisors___' + s + 'family_name');
+        }
+      }
+      console.log(record);
+      if (alerts.length > 0) {
+        console.log(alerts);
+        for ( var a in alerts ) {
+          $('#'+alerts[a]).addClass('alerted');
+          $('.alerted').bind('change',unalert);
+          $('#alerting').show();
+        }
+      } else {
+        submit(record);
+      }
+    }
+    $('#submit').bind('click',checksubmit);
+
+  });
+  </script>
+</html>
+
+
+

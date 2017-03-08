@@ -1,0 +1,44 @@
+{
+	"open_access_ip_confirmed": true,
+	"abstract": "A long piece of text is added here spanning multiple lines. This is just one line though",
+	"qualification_level": "Doctoral",
+	"authenticity_agreement": true,
+	"date_awarded": "2016-04-30",
+	"degree_title": "PhD in English Literature",
+	"keywords": "mythology",
+	"funding": "Some text about funding",
+	"other_languages": ["Latin", "French"],
+	"title": "Title of my 2nd thesis",
+	"college": "Exeter College",
+	"comments": "No comments",
+	"access": {
+		"reason": "Reason of access",
+		"type": "type of access"
+	},
+	"status": {
+		"code": "draft"
+	},
+	"degree": "Doctor of Philosophy (PhD)",
+	"agreement_confirmed": true,
+	"distribution_license": true,
+	"supervisors": {
+		"orcid": "orcid:12345",
+		"family_name": "Lambourne",
+		"given_names": "Lord"
+	},
+	"faculty": "Department of English",
+	"open_access_confidentiality_confirmed": false,
+	"license": {
+		"text": "CC0",
+		"uri": "https://creativecommons.org/choose/zero/"
+	},
+	"language": "English",
+	"authors": [{
+		"email_id": "a@example.com",
+		"family_name": "Ranganathan",
+		"crsid": "cami1234",
+		"given_names": "Anusha"
+	}],
+	"awarding_institution": "University of Somewhere",
+	"third_party_copyright_notes": "Some notes about third party copyright"
+}

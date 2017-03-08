@@ -1,0 +1,62 @@
+<!-- Cottagelabs deposit system page setup -->
+<?php 
+  global $user;
+  $username = "";
+  $email = "";
+  $ssid = "";
+
+  if (!empty($_SERVER['REDIRECT_displayName'])) {
+    // under SSO we use the user's email address as their username
+    $username = $_SERVER['REDIRECT_eppn'];
+  }
+  elseif (!empty($user) && !empty($user->name)) {
+    $username = $user->name;
+  }
+
+  if (!empty($_SERVER['REDIRECT_eppn'])) {
+    $email = $_SERVER['REDIRECT_eppn'];
+  }
+  elseif (!empty($user) && !empty($user->mail)) {
+    $email = $user->mail;
+  }
+  
+  // sessions id could be REDIRECT_Shib-Session-ID, REDIRECT_SSL_SESSION_ID, SSL_SESSION_ID
+  if (!empty($_SERVER['REDIRECT_Shib-Session-ID'])) {
+    $ssid = $_SERVER['REDIRECT_Shib-Session-ID'];
+  }
+  elseif (!empty($user) && !empty($user->ssid)) {
+    $ssid = $user->ssid;
+  }
+?>
+<link rel="stylesheet" type="text/css" href="/misc/cl/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="/misc/cl/css/lodestone.css">
+<link rel="stylesheet" type="text/css" href="/misc/cl/css/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="/misc/cl/css/parsley.css">
+<link rel="stylesheet" type="text/css" href="/misc/cl/css/select2.css">
+
+<script src="/misc/cl/js/jquery.js"></script>
+<script src="/misc/cl/js/jquery-ui.js"></script>
+<script src="/misc/cl/js/bootstrap.js"></script>
+<script src="/misc/cl/js/parsley.min.js"></script>
+<script type="text/javascript" src="/misc/cl/js/jquery.ui.widget.js"></script>
+<script type="text/javascript" src="/misc/cl/js/jquery.iframe-transport.js"></script>
+<script src="/misc/cl/js/select2.min.js"></script>
+<script type="text/javascript" src="/misc/cl/js/jquery.fileupload.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="/misc/cl/js/ie10-viewport-bug-workaround.js"></script>
+<script src="/misc/cl/js/handlebars.min.js"></script>
+
+<!-- Cottagelas deposit system page setup - thesis list -->
+<script src="/misc/cl/js/list_page.js"></script>
+<script src="/misc/cl/js/list_thesis.js"></script>
+
+<div id="thesis_list" 
+  data-api="/deposit/api/ethesis" 
+  data-template="/misc/cl/templates/list_thesis.handlebars" 
+  data-add-item="/deposit/theses/form"
+  data-show-item="/deposit/theses/show"
+  data-display="/deposit/theses/"
+  data-username="<?php echo $username;?>" 
+  data-email="<?php echo $email;?>" 
+  data-ssid="<?php echo $ssid;?>" ></div>
+

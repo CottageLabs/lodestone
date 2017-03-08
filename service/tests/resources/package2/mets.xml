@@ -1,0 +1,222 @@
+<?xml version="1.0" ?>
+<mets ID="theses_mets" OBJID="b499fec0-77e2-4014-8e43-8d84c611982b" PROFILE="DSpace METS SIP Profile 1.0" TYPE="DSPace ITEM"
+      xmlns="http://www.loc.gov/METS/"
+      xmlns:dim="http://www.dspace.org/xmlns/dspace/dim"
+      xmlns:premis="http://www.loc.gov/standards/premis"
+      xmlns:rights="http://cosimo.stanford.edu/sdr/metsrights/"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd">
+
+  <metsHdr CREATEDATE="2016-08-12T16:08:40Z">
+    <agent OTHERTYPE="Lodestone" ROLE="CREATOR" TYPE="OTHER">
+      <name>Lodestone</name>
+    </agent>
+  </metsHdr>
+
+  <dmdSec ID="dmdSec_1">
+    <mdWrap MDTYPE="OTHER" OTHERMDTYPE="DIM">
+      <xmlData>
+        <dim:dim dspaceType="ITEM">
+          <dim:field element="staff-id" mdschema="pubs">cami1234</dim:field>
+          <dim:field element="description" mdschema="dc" qualifier="abstract">A long piece of text is added here spanning multiple lines. This is just one line though</dim:field>
+          <dim:field element="type" mdschema="dc" qualifier="qualificationlevel">Doctoral</dim:field>
+          <dim:field element="date" mdschema="dc" qualifier="issued">2016-04-30</dim:field>
+          <dim:field element="type" mdschema="dc" qualifier="qualificationtitle">PhD in English Literature</dim:field>
+          <dim:field element="subject" mdschema="dc">mythology</dim:field>
+          <dim:field element="description" mdschema="dc" qualifier="sponsorship">Some text about funding</dim:field>
+          <dim:field element="title" mdschema="dc">Title of my 2nd thesis</dim:field>
+          <dim:field element="publisher" mdschema="dc" qualifier="college">Exeter College</dim:field>
+          <dim:field element="description" mdschema="dc">No comments</dim:field>
+          <dim:field element="contributor" mdschema="dc" qualifier="author">Ranganathan, Anusha</dim:field>
+          <dim:field element="rights" mdschema="dc">CC0</dim:field>
+          <dim:field element="type" mdschema="dc" qualifier="qualificationname">Doctor of Philosophy (PhD)</dim:field>
+          <dim:field element="rights" mdschema="dc" qualifier="general">True</dim:field>
+          <dim:field element="publisher" mdschema="dc" qualifier="department">Department of English</dim:field>
+          <dim:field element="language" mdschema="dc" qualifier="iso">English</dim:field>
+          <dim:field element="rights" mdschema="dc" qualifier="uri">https://creativecommons.org/choose/zero/</dim:field>
+          <dim:field element="publisher" mdschema="dc" qualifier="institution">University of XXXXXX</dim:field>
+        </dim:dim>
+      </xmlData>
+    </mdWrap>
+  </dmdSec>
+
+  <amdSec ID="amdSec_1">
+    <techMD ID="techMD_1">
+      <mdWrap MDTYPE="PREMIS">
+        <xmlData xsi:schemaLocation="http://www.loc.gov/standards/premis http://www.loc.gov/standards/premis/PREMIS-v1-0.xsd">
+          <premis:premis>
+            <premis:object>
+              <premis:objectCharacteristics>
+                <premis:fixity>
+                  <premis:messageDigestAlgorithm>sha1</premis:messageDigestAlgorithm>
+                  <premis:messageDigest>afd08609c5e84914d0c3ce24e54c737e67ac6ce1</premis:messageDigest>
+                </premis:fixity>
+                <premis:size>871346</premis:size>
+                <premis:format>
+                  <premis:formatDesignation>
+                    <premis:formatName>application/json</premis:formatName>
+                  </premis:formatDesignation>
+                </premis:format>
+              </premis:objectCharacteristics>
+              <premis:originalName>content1.json</premis:originalName>
+            </premis:object>
+          </premis:premis>
+        </xmlData>
+      </mdWrap>
+    </techMD>
+    <rightsMD ID="rightsMD_1">
+      <mdWrap MDTYPE="OTHER" OTHERMDTYPE="METSRIGHTS">
+        <xmlData xsi:schemaLocation="http://cosimo.stanford.edu/sdr/metsrights/ http://cosimo.stanford.edu/sdr/metsrights.xsd">
+          <rights:RightsDeclarationMD RIGHTSCATEGORY="LICENSED">
+            <rights:Context CONTEXTCLASS="GENERAL PUBLIC" rpName="Public Bitstream" start-date="2016-08-12">
+              <rights:Permissions DELETE="false" DISCOVER="true" DISPLAY="true" MODIFY="false"/>
+            </rights:Context>
+          </rights:RightsDeclarationMD>
+        </xmlData>
+      </mdWrap>
+    </rightsMD>
+    <sourceMD ID="sourceMD_1">
+      <mdWrap MDTYPE="OTHER" OTHERMDTYPE="AIP-TECHMD">
+        <xmlData>
+          <dim:dim dspaceType="BITSTREAM">
+            <dim:field element="title" mdschema="dc">content1.json</dim:field>
+            <dim:field element="description" mdschema="dc">Bookmarks</dim:field>
+            <dim:field element="format" mdschema="dc" qualifier="mimetype">application/json</dim:field>
+            <dim:field element="format" mdschema="dc">any text editor </dim:field>
+          </dim:dim>
+        </xmlData>
+      </mdWrap>
+    </sourceMD>
+  </amdSec>
+
+  <amdSec ID="amdSec_2">
+    <techMD ID="techMD_2">
+      <mdWrap MDTYPE="PREMIS">
+        <xmlData xsi:schemaLocation="http://www.loc.gov/standards/premis http://www.loc.gov/standards/premis/PREMIS-v1-0.xsd">
+          <premis:premis>
+            <premis:object>
+              <premis:objectCharacteristics>
+                <premis:fixity>
+                  <premis:messageDigestAlgorithm>sha1</premis:messageDigestAlgorithm>
+                  <premis:messageDigest>626af9694747f19dda05921dccae42eaa33c5ede</premis:messageDigest>
+                </premis:fixity>
+                <premis:size>24322</premis:size>
+                <premis:format>
+                  <premis:formatDesignation>
+                    <premis:formatName>text/plain</premis:formatName>
+                  </premis:formatDesignation>
+                </premis:format>
+              </premis:objectCharacteristics>
+              <premis:originalName>content2.txt</premis:originalName>
+            </premis:object>
+          </premis:premis>
+        </xmlData>
+      </mdWrap>
+    </techMD>
+    <rightsMD ID="rightsMD_2">
+      <mdWrap MDTYPE="OTHER" OTHERMDTYPE="METSRIGHTS">
+        <xmlData xsi:schemaLocation="http://cosimo.stanford.edu/sdr/metsrights/ http://cosimo.stanford.edu/sdr/metsrights.xsd">
+          <rights:RightsDeclarationMD RIGHTSCATEGORY="LICENSED">
+            <rights:Context CONTEXTCLASS="GENERAL PUBLIC" rpName="Public Bitstream" start-date="2016-08-12">
+              <rights:Permissions DELETE="false" DISCOVER="true" DISPLAY="true" MODIFY="false"/>
+            </rights:Context>
+          </rights:RightsDeclarationMD>
+        </xmlData>
+      </mdWrap>
+    </rightsMD>
+    <sourceMD ID="sourceMD_2">
+      <mdWrap MDTYPE="OTHER" OTHERMDTYPE="AIP-TECHMD">
+        <xmlData>
+          <dim:dim dspaceType="BITSTREAM">
+            <dim:field element="title" mdschema="dc">content2.txt</dim:field>
+            <dim:field element="description" mdschema="dc">A list of commands</dim:field>
+            <dim:field element="format" mdschema="dc" qualifier="mimetype">text/plain</dim:field>
+            <dim:field element="format" mdschema="dc">Any text editor</dim:field>
+          </dim:dim>
+        </xmlData>
+      </mdWrap>
+    </sourceMD>
+  </amdSec>
+
+  <amdSec ID="amdSec_3">
+    <techMD ID="techMD_3">
+      <mdWrap MDTYPE="PREMIS">
+        <xmlData xsi:schemaLocation="http://www.loc.gov/standards/premis http://www.loc.gov/standards/premis/PREMIS-v1-0.xsd">
+          <premis:premis>
+            <premis:object>
+              <premis:objectCharacteristics>
+                <premis:fixity>
+                  <premis:messageDigestAlgorithm>SHA1</premis:messageDigestAlgorithm>
+                  <premis:messageDigest>398c74b5517992bcffd116c05e968fb543d443ae</premis:messageDigest>
+                </premis:fixity>
+                <premis:size>4059</premis:size>
+                <premis:format>
+                  <premis:formatDesignation>
+                    <premis:formatName>text/plain</premis:formatName>
+                  </premis:formatDesignation>
+                </premis:format>
+              </premis:objectCharacteristics>
+              <premis:originalName>confirmations.txt</premis:originalName>
+            </premis:object>
+          </premis:premis>
+        </xmlData>
+      </mdWrap>
+    </techMD>
+    <rightsMD ID="rightsMD_3">
+      <mdWrap MDTYPE="OTHER" OTHERMDTYPE="METSRIGHTS">
+        <xmlData xsi:schemaLocation="http://cosimo.stanford.edu/sdr/metsrights/ http://cosimo.stanford.edu/sdr/metsrights.xsd">
+          <rights:RightsDeclarationMD RIGHTSCATEGORY="LICENSED">
+            <rights:Context CONTEXTCLASS="GENERAL PUBLIC" rpName="Not for Public Consumption">
+              <rights:Permissions DELETE="false" DISCOVER="true" DISPLAY="true" MODIFY="false"/>
+            </rights:Context>
+            <rights:Context CONTEXTCLASS="REPOSITORY MGR" rpName="Admin Only">
+              <rights:Permissions DELETE="false" DISCOVER="true" DISPLAY="true" MODIFY="false"/>
+            </rights:Context>
+          </rights:RightsDeclarationMD>
+        </xmlData>
+      </mdWrap>
+    </rightsMD>
+    <sourceMD ID="sourceMD_3">
+      <mdWrap MDTYPE="OTHER" OTHERMDTYPE="AIP-TECHMD">
+        <xmlData>
+          <dim:dim dspaceType="BITSTREAM">
+            <dim:field element="title" mdschema="dc">confirmations.txt</dim:field>
+            <dim:field element="format" mdschema="dc" qualifier="mimetype">text/plain</dim:field>
+          </dim:dim>
+        </xmlData>
+      </mdWrap>
+    </sourceMD>
+  </amdSec>
+
+  <fileSec>
+    <fileGrp ID="fileGrp_1" USE="CONTENT">
+      <file ADMID="amdSec_1" GROUPID="fileGrp_1" ID="file_1" MIMETYPE="application/json" SEQ="1">
+        <FLocat LOCTYPE="URL" xlink:href="/ethesis/b499fec0-77e2-4014-8e43-8d84c611982b/files/content1.json"/>
+      </file>
+      <file ADMID="amdSec_2" GROUPID="fileGrp_1" ID="file_2" MIMETYPE="text/plain" SEQ="2">
+        <FLocat LOCTYPE="URL" xlink:href="/ethesis/b499fec0-77e2-4014-8e43-8d84c611982b/files/content2.txt"/>
+      </file>
+    </fileGrp>
+    <fileGrp ID="fileGrp_2" USE="ADMIN">
+      <file ADMID="amdSec_3" GROUPID="fileGrp_2" ID="file_3" MIMETYPE="text/plain" SEQ="1">
+        <FLocat LOCTYPE="URL" xlink:href="/ethesis/b499fec0-77e2-4014-8e43-8d84c611982b/files/confirmations.txt"/>
+      </file>
+    </fileGrp>
+  </fileSec>
+
+  <structMap ID="structMap_1" LABEL="structure" TYPE="LOGICAL">
+    <div DMDID="dmdSec_1" ID="structMap_div_1" TYPE="DSpace Object">
+      <div ID="structMap_div_2">
+        <fptr FILEID="file_1"/>
+      </div>
+      <div ID="structMap_div_3">
+        <fptr FILEID="file_2"/>
+      </div>
+      <div ID="structMap_div_4">
+        <fptr FILEID="file_3"/>
+      </div>
+    </div>
+  </structMap>
+
+</mets>

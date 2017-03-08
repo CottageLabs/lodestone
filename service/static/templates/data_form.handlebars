@@ -1,0 +1,874 @@
+<div class="row">
+    <div class="col-md-12">
+        <h1>Data submission form</h1>
+
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="alert alert-info">
+                    <p><strong>Important information before you submit:</strong></p>
+
+                    <p>If you have any special requests (e.g. access to reviewers only, or I need this request to be processed urgently) please
+                        indicate this in the 'Additional information' field at the bottom of the form.</p>
+
+                    <p>If you have any problems filling in the form, or if you would like to give us any feedback on the form,
+                        please <a href="mailto:info@data.xxxxxxx.ac.uk">contact us</a>.</p>
+                </div>
+            </div>
+        </div>
+
+        <form id="data_form" class="form-horizontal" data-parsley-validate>
+
+            <h2>Background</h2>
+
+            <div class="form-group">
+                <div class="col-md-7">
+                    <strong>Was the data you intend to submit created in a project funded by an external entity or in collaboration with an external entity? *</strong>
+                </div>
+                <div class="col-md-2">
+                    <input type="radio" name="external_funding" id="external_funding_yes" value="true"
+                           data-parsley-required="true"
+                           data-read="true" data-read-type="single">
+                    <label for="external_funding_yes" class="control-label" style="text-align:left; margin-right: 10px">
+                        Yes
+                    </label>
+                    <br>
+                    <input type="radio" name="external_funding" id="external_funding_no" value="false"
+                           data-parsley-required="true"
+                           data-read="true" data-read-type="single">
+                    <label for="external_funding_no" class="control-label" style="text-align:left;">
+                        No
+                    </label>
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <div class="col-md-7">
+                    <strong>Do your data contain any personal/sensitive, commercially-sensitive or other forms of confidential/restricted information? *</strong>
+                </div>
+                <div class="col-md-2">
+                    <input type="radio" name="confidential_information" id="confidential_information_yes" value="true"
+                           data-parsley-required="true"
+                           data-read="true" data-read-type="single">
+                    <label for="confidential_information_yes" class="control-label" style="text-align:left; margin-right: 10px">
+                        Yes
+                    </label>
+                    <br>
+                    <input type="radio" name="confidential_information" id="confidential_information_no" value="false"
+                           data-parsley-required="true"
+                           data-read="true" data-read-type="single">
+                    <label for="confidential_information_no" class="control-label" style="text-align:left;">
+                        No
+                    </label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <p><strong>Information about personal/sensitive information</strong> For information about personal/sensitive information have a look <a href="http://www.data.xxxxxxx.ac.uk/sensitive-data">here</a>.
+                        If you have any doubts about this question, please consult <a href="http://www.xxxxxx.ac.uk/research-ethics">the University Ethics pages</a> or e-mail
+                        <a href="mailto:info@admin.xxxxxxx.ac.uk">the University’s Research Governance and Integrity Officer</a>.</p>
+
+                    <p><strong>Information about other forms of confidential/restricted information</strong> Examples of other forms of
+                        confidential/restricted information might include cases where there were confidentiality/publication
+                        restrictions in sponsorship agreements or in collaborations agreements, or for example research data
+                        which is subject to UK export control law.</p>
+                </div>
+            </div>
+
+            <div id="confidential_information_optional" style="display:none">
+                <div class="form-group">
+                    <label for="accessrights" class="control-label col-md-4" style="text-align: left;">
+                        Please explain the nature of confidential/restricted information in your data:*
+                    </label>
+                    <div class="col-md-7">
+                        <textarea class="form-control" name="accessrights" id="accessrights" style="min-height:200px;"
+                                  data-parsley-validate-if-empty="true" data-parsley-required-if-checked="#confidential_information_yes" data-parsley-required-if-checked-message="This value is required"
+                                  data-read="true" data-read-type="single" data-read-if-checked="#confidential_information_yes"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Rights</h2>
+
+            <div class="form-group">
+                <div class="col-md-7">
+                    <label for="confirm_sharing_rights" class="control-label" style="text-align:left">
+                        I confirm that I have the rights to share these data via the University Research Repository. *
+                    </label>
+                </div>
+                <div class="col-md-2">
+                    <input type="checkbox" name="confirm_sharing_rights" id="confirm_sharing_rights" value="true" style="margin-top: 12px"
+                           data-parsley-required="true" data-parsley-required-message="You must confirm"
+                           data-read="true" data-read-type="single">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <p>Please confirm that to the best of your knowledge you have obtained permissions for sharing of these data
+                        from any third parties who might hold rights over these data and that you have the rights to share
+                        these data via the University Research Repository.</p>
+
+                    <p><strong>Unsure whether to tick or not?</strong></p>
+
+                    <p>If you have any doubts about this statement, please consult (in the given order):</p>
+
+                    <ul>
+                        <li>the Principal Investigator responsible for this study (if you are not the Principal Investigator)</li>
+                        <li>your Departmental Administrator (or equivalent)</li>
+                        <li>the appropriate Contracts Manager at the Research Operations Office.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--
+            <div class="row">
+                <div class="col-md-12">
+                    <strong>What is the status of your submission? *</strong>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-10 col-md-offset-1">
+                    <input type="radio" name="placeholder" id="placeholder_yes" value="true"
+                           data-parsley-required="true"
+                           data-read="true" data-read-type="single">
+                    <label for="placeholder_yes" class="control-label" style="text-align:left; margin-right: 10px">
+                        This is a placeholder record - I will make changes to it
+                    </label>
+                    <br>
+                    <input type="radio" name="placeholder" id="placeholder_no" value="false"
+                           data-parsley-required="true"
+                           data-read="true" data-read-type="single">
+                    <label for="placeholder_no" class="control-label" style="text-align:left;">
+                        This is a final record - I do not foresee any additional changes
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <p>If you are expecting to make changes to this data record, please select the 'placeholder' option.</p>
+                    <p>If you have any questions about this, please <a href="mailto:info@data.xxxxxxx.ac.uk">e-mail us</a>.</p>
+                </div>
+            </div>
+            -->
+
+            <h2>Related Publication</h2>
+
+            <div class="form-group">
+                <div class="col-md-4">
+                    <strong>Is your data supporting a publication? *</strong>
+                </div>
+                <div class="col-md-5">
+                    <input type="radio" name="has_publication" id="has_publication_yes" value="true"
+                           data-parsley-required="true"
+                           data-read="true" data-read-type="single">
+                    <label for="has_publication_yes" class="control-label" style="text-align:left; margin-right: 10px">
+                        Yes
+                    </label>
+                    <br>
+                    <input type="radio" name="has_publication" id="has_publication_no" value="false"
+                           data-parsley-required="true"
+                           data-read="true" data-read-type="single">
+                    <label for="has_publication_no" class="control-label" style="text-align:left;">
+                        No
+                    </label>
+                </div>
+            </div>
+
+            <div id="publication_details" style="display:none;">
+                <div class="form-group">
+                    <label for="publicationtitle" class="control-label col-md-4">
+                        Title of your publication *
+                    </label>
+                    <div class="col-md-7">
+                        <input type="text" class="form-control" id="publicationtitle"
+                               data-parsley-validate-if-empty="true" data-parsley-required-if-checked="#has_publication_yes" data-parsley-required-if-checked-message="This value is required"
+                               data-read="true" data-read-type="single" data-read-if-checked="#has_publication_yes"><br>
+                        <p>If your data accompanies publication, please enter the tile of your publication. If your manuscript
+                            is in preparation and you do not know the title yet, write 'TBC'.</p>
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="journal_name" class="control-label col-md-4">
+                        Name of the journal *
+                    </label>
+                    <div class="col-md-7">
+                        <input type="text" class="form-control" id="journal_name"
+                               data-parsley-validate-if-empty="true" data-parsley-required-if-checked="#has_publication_yes" data-parsley-required-if-checked-message="This value is required"
+                               data-read="true" data-read-type="single" data-read-if-checked="#has_publication_yes"><br>
+                        <p>If your manuscript is in preparation and you do not know yet where it is going to be published, write 'TBC'.</p>
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="iscitedby" class="control-label col-md-4">
+                        Link to your publication
+                    </label>
+                    <div class="col-md-7">
+                        <input type="text" class="form-control" id="iscitedby"
+                               data-read="true" data-read-type="single" data-read-if-checked="#has_publication_yes"><br>
+                        <p>If you already have a link to your publication, please provide it here.
+                            If the publisher has given you a DOI link for your publication, please enter the DOI here. Enter
+                            just the DOI numbers (e.g. 10.17863/CAM.3). If you have a hyperlink without a DOI instead, please
+                            enter the full hyperink, with the leading http instead.</p>
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <div class="col-md-4" style="text-align: right;">
+                        <strong>Is your publication already published? *</strong>
+                    </div>
+                    <div class="col-md-5">
+
+                        <input type="radio" name="publication_published" id="publication_published_yes" value="true"
+                               data-parsley-validate-if-empty="true" data-parsley-required-if-checked="#has_publication_yes" data-parsley-required-if-checked-message="This value is required"
+                               data-read="true" data-read-type="single" data-read-if-checked="#has_publication_yes">
+                        <label for="publication_published_yes" class="control-label" style="text-align:left; margin-right: 10px">
+                            Yes
+                        </label>
+
+                        <input type="radio" name="publication_published" id="publication_published_no" value="false"
+                               data-parsley-validate-if-empty="true" data-parsley-required-if-checked="#has_publication_yes" data-parsley-required-if-checked-message="This value is required"
+                               data-read="true" data-read-type="single" data-read-if-checked="#has_publication_yes">
+                        <label for="publication_published_no" class="control-label" style="text-align:left;">
+                            No
+                        </label>
+
+                    </div>
+                </div>
+
+                <div id="if_not_published" style="display:none">
+
+                    <div class="form-group">
+                        <div class="col-md-4" style="text-align: right;">
+                            <strong>Does your data need to be embargoed until your publication is published? *</strong>
+                        </div>
+                        <div class="col-md-5">
+
+                            <input type="radio" name="embargo" id="embargo_yes" value="true"
+                                   data-parsley-validate-if-empty="true" data-parsley-required-if-checked="#publication_published_no" data-parsley-required-if-checked-message="This value is required"
+                                   data-read="true" data-read-type="single"  data-read-if-checked="#publication_published_no">
+                            <label for="embargo_yes" class="control-label" style="text-align:left; margin-right: 10px">
+                                Yes
+                            </label>
+
+                            <input type="radio" name="embargo" id="embargo_no" value="false"
+                                   data-parsley-validate-if-empty="true" data-parsley-required-if-checked="#publication_published_no #placeholder_no" data-parsley-required-if-checked-message="This value is required"
+                                   data-read="true" data-read-type="single" data-read-if-checked="#publication_published_no #placeholder_no">
+                            <label for="embargo_no" class="control-label" style="text-align:left;">
+                                No
+                            </label>
+
+                        </div>
+                    </div>
+
+                    <div id="if_embargoed" style="display:none">
+                        <div class="form-group">
+                            <div class="col-md-4" style="text-align: right;">
+                                <strong>I understand that reviewers won't have access to embargoed files *</strong>
+                            </div>
+                            <div class="col-md-5">
+                                <input type="checkbox" name="peerreviewaccess" id="peerreviewaccess" value="true" style="margin-top: 12px;"
+                                       data-parsley-validate-if-empty="true" data-parsley-required-if-checked="#embargo_yes" data-parsley-required-if-checked-message="You must confirm"
+                                       data-read="true" data-read-type="single" data-read-if-checked="#embargo_yes">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="publication_date" class="control-label col-md-4">
+                            Publication date (if known)
+                        </label>
+                        <div class="col-md-7">
+                            <input type="text" class="form-control datepicker" id="publication_date"
+                                   data-parsley-pattern="\d{4}-\d{2}-\d{2}" data-parsley-pattern-message="Please enter a date in the format YYYY-MM-DD"
+                                   data-read="true" data-read-type="single" data-read-if-checked="#publication_published_no">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <h2>Describe your data</h2>
+
+            <div class="form-group">
+                <label for="title" class="control-label col-md-4">
+                    Title of your dataset *
+                </label>
+                <div class="col-md-7">
+                    <input type="text" class="form-control" id="title"
+                              data-parsley-required="true"
+                              data-read="true" data-read-type="single"><br>
+                    Please enter the title of the dataset. For datasets supporting publications, the suggested title is "Research data supporting ['Tile of the publication']".
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-7 col-md-offset-4">
+                    <h3>List all authors of this dataset</h3>
+                </div>
+            </div>
+
+            <div id="authors_list">
+                <div id="authors_0" class="repeatable_container">
+                    <div class="form-group">
+                        <label for="authors-0-given_names" class="control-label col-md-4">First name *</label>
+                        <div class="col-md-7">
+                            <input type="text" class="form-control repeatable-control" name="authors-0-given_names" id="authors-0-given_names"
+                                   data-parsley-required="true"
+                                   data-read="true" data-read-type="object-list" data-read-index-pattern="authors-(\d+)-.*" data-read-list-field="authors" data-read-field-pattern="authors-\d+-(.*)">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="authors-0-family_name" class="control-label col-md-4">Last name *</label>
+                        <div class="col-md-7">
+                            <input type="text" class="form-control repeatable-control" name="authors-0-family_name" id="authors-0-family_name"
+                                   data-parsley-required="true"
+                                   data-read="true" data-read-type="object-list" data-read-index-pattern="authors-(\d+)-.*" data-read-list-field="authors" data-read-field-pattern="authors-\d+-(.*)">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="authors-0-orcid" class="control-label col-md-4">ORCID</label>
+                        <div class="col-md-7">
+                            <input type="text" class="form-control repeatable-control" name="authors-0-orcid" id="authors-0-orcid"
+                                   data-parsley-pattern="\d{4}-\d{4}-\d{4}-\d{3}[0-9X]" data-parsley-pattern-message="Please enter a valid ORCID"
+                                   data-read="true" data-read-type="object-list" data-read-index-pattern="authors-(\d+)-.*" data-read-list-field="authors" data-read-field-pattern="authors-\d+-(.*)">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4" style="text-align: right">
+                            <a href="#" id="orcid-less-more" data-state="closed">More about ORCID</a>
+                        </div>
+                        <div class="col-md-7">
+                            <div id="orcid-info" style="display:none">
+                                Please enter your ORCID ID. Open Researcher and Contributor ID (ORCID) provides each academic
+                                with a unique identifier, and is increasingly required by publishers and by data repositories
+                                at the stage of research output submission. The use of ORCID ensures that each academic's
+                                research activities are distinguished from those of others with similar names. Have a look
+                                here for a <a href="http://osc.xxxxxxxx.ac.uk/author-tools/managing-your-online-presence/getting-orcid" target="_blank">video with instructions about getting ORCID</a>.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="authors-0-supervisor" class="control-label col-md-4">Supervisor?</label>
+                        <div class="col-md-7">
+                            <input class="repeatable-control" type="checkbox" name="authors-0-supervisor" id="authors-0-supervisor" value="true" style="margin-top: 12px;"
+                                   data-read="true" data-read-type="object-list" data-read-index-pattern="authors-(\d+)-.*" data-read-list-field="authors" data-read-field-pattern="authors-\d+-(.*)">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="authors-0-supervisor" class="control-label col-md-4">This is me</label>
+                        <div class="col-md-7">
+                            <input class="repeatable-control thisisme" type="checkbox" name="authors-0-thisisme" id="authors-0-thisisme" value="true" style="margin-top: 12px;">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-7 col-md-offset-4">
+                            <button class="btn btn-danger remove_author" id="remove_author" style="display: none;">Remove this author</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-7 col-md-offset-4">
+                    <button class="btn btn-primary addanother add_author" id="another_authors" data-repeat-for="authors">Add another author</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-4">
+                    <p>Please list the authors of this dataset and indicate who supervised this research.</p>
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <label for="description" class="control-label col-md-4">
+                    Description of your data *
+                </label>
+                <div class="col-md-7">
+                    <textarea class="form-control" id="description" style="min-height:200px;"
+                              data-parsley-required="true"
+                              data-read="true" data-read-type="single"></textarea><br>
+                    <p>Where is this data from? What types of files are included in your dataset? Do your data support a publication? How were these data collected? Please also include any technical and non-technical information which will help in making these data accessible and reusable for the future.</p>
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <label for="keywords" class="control-label col-md-4">
+                    Keywords *<br>
+                    <small style="font-weight:normal;">
+                        Enter at least 3 subject keywords or phrases, separated by commas (a maximum of 50 keywords or phrases can be entered).
+                    </small>
+                </label>
+                <div class="col-md-7">
+                    <div class="row" id="keywords_block" style="margin-bottom:5px;">
+                        <div class="col-md-12">
+                            <input type="text" class="form-control" name="keywords" id="keywords"
+                                   data-parsley-required="true" data-parsley-pattern=".+,.+,.+" data-parsley-pattern-message="You must enter at least 3 keywords"
+                                   data-read="true" data-read-type="single" data-read-value-separator=",">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4" style="text-align: right;">
+                    <strong>Related resources</strong><br>
+                    <small style="font-weight:normal;">If you would like us to link your dataset with other relevant existing resources (for example, your other existing publications, other datasets, external reports, webpages, news articles etc.), please provide URLs here.</small>
+                </div>
+                <div class="col-md-7">
+                    <div id="resources_list">
+                        <div id="resources_0" class="repeatable_container" style="margin-bottom: 10px;">
+                            <div class="form-inline">
+                                <div class="form-group" style="margin-left: 0px; width: 100%">
+                                    <div class="row" style="margin-bottom: 5px">
+                                        <div class="col-md-4"><label for="resources-0-type" class="control-label">Resource Type</label></div>
+                                        <div class="col-md-8"><select class="form-control repeatable-control" name="resources-0-type" id="resources-0-type"
+                                            data-read="true" data-read-type="object-list" data-read-index-pattern="resources-(\d+)-.*" data-read-list-field="resources" data-read-field-pattern="resources-\d+-(.*)">
+                                            <option value=""></option>
+                                            <option value="webpage">Webpage</option>
+                                            <option value="sourcecode">Source Code</option>
+                                            <option value="otherpublication">Publication</option>
+                                            <option value="conferenceoutput">Conference Output</option>
+                                            <option value="otherdataset">Dataset</option>
+                                            <option value="report">Report</option>
+                                            <option value="blog">Blog Post</option>
+                                            <option value="other">Other</option>
+                                        </select></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4"><label for="resources-0-url" class="control-label">URL</label></div>
+                                        <div class="col-md-8"><input type="text" class="form-control repeatable-control" name="resources-0-url" id="resources-0-url"
+                                                                     data-read="true" data-read-type="object-list" data-read-index-pattern="resources-(\d+)-.*" data-read-list-field="resources" data-read-field-pattern="resources-\d+-(.*)">
+                                        </div>
+                                    </div>
+                                    <button class="form-control btn btn-danger remove_resource" id="remove_resource" style="display: none;">Remove</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group" style="margin-top: 10px; margin-left: 0px;">
+                        <p>Please enter the full URL, with the leading http</p>
+                        <button class="btn btn-primary addanother add_resource" id="another_resources" data-repeat-for="resources">Add another resource</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-4" style="text-align: right;">
+                    <strong>Which funders are acknowledged for this research?</strong><br>
+                </div>
+                <div class="col-md-7">
+                    <div id="funder_list">
+                        <div id="funders_0" class="repeatable_container" style="margin-bottom: 10px;">
+                            <div class="form-inline">
+                                <div class="form-group" style="margin-left: 0px; width: 100%;">
+                                    <div class="row" style="margin-bottom: 5px">
+                                        <div class="col-md-4"><label for="funders-0-name" class="control-label">Funder name</label></div>
+                                        <div class="col-md-8"><input type="text" class="form-control repeatable-control" name="funders-0-name" id="funders-0-name"
+                                               data-read="true" data-read-type="object-list" data-read-index-pattern="funders-(\d+)-.*" data-read-list-field="funders" data-read-field-pattern="funders-\d+-(.*)">
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-4"><label for="funders-0-project_id" class="control-label">Project ID</label></div>
+                                        <div class="col-md-8"><input type="text" class="form-control repeatable-control" name="funders-0-project_id" id="funders-0-project_id"
+                                            data-read="true" data-read-type="object-list" data-read-index-pattern="funders-(\d+)-.*" data-read-list-field="funders" data-read-field-pattern="funders-\d+-(.*)">
+                                        </div>
+                                    </div>
+                                    <button class="form-control btn btn-danger remove_funder" id="remove_funder" style="display: none;">Remove</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group" style="margin-top: 10px; margin-left: 0px;">
+                        <button class="btn btn-primary addanother add_funder" id="another_funder" data-repeat-for="funders">Add another funder</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <h2>About you</h2>
+
+            <div class="form-group">
+                <label for="given_names" class="control-label col-md-4">
+                    First name *
+                </label>
+                <div class="col-md-7">
+                    <input type="text" class="form-control" id="given_names" name="given_names"
+                           data-parsley-required="true"
+                           data-read="true" data-read-type="single"><br>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="family_name" class="control-label col-md-4">
+                    Last name*
+                </label>
+                <div class="col-md-7">
+                    <input type="text" class="form-control" id="family_name" name="family_name"
+                           data-parsley-required="true"
+                           data-read="true" data-read-type="single"><br>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="department" class="control-label col-md-4">
+                    Your department/institute *
+                </label>
+                <div class="col-md-7">
+                    <input type="text" class="form-control" id="department"
+                           data-parsley-required="true"
+                           data-read="true" data-read-type="single"><br>
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <div class="col-md-4" style="text-align: right;">
+                    <strong>Are you currently employed or studying at the University? *</strong>
+                </div>
+                <div class="col-md-5">
+                    <input type="radio" name="currently_employed" id="currently_employed_yes" value="true"
+                           data-parsley-required="true"
+                           data-read="true" data-read-type="single">
+                    <label for="currently_employed_yes" class="control-label" style="text-align:left; margin-right: 10px">
+                        Yes
+                    </label>
+                    <br>
+                    <input type="radio" name="currently_employed" id="currently_employed_no" value="false"
+                           data-parsley-required="true"
+                           data-read="true" data-read-type="single">
+                    <label for="currently_employed_no" class="control-label" style="text-align:left;">
+                        No
+                    </label>
+                </div>
+            </div>
+
+            <div id="if_employed" style="display: none">
+                <div class="form-group">
+                    <label for="crsid" class="control-label col-md-4">
+                        Your CRSid *<br>
+                        <small style="font-weight: normal">Please enter your CRSid. Your CRDid must be entered in the format 'ab123' NOT 'ab123@xxxxxx.ac.uk'.</small>
+                    </label>
+                    <div class="col-md-7">
+                        <input type="text" class="form-control" id="crsid"
+                               data-parsley-validate-if-empty="true" data-parsley-required-if-checked="#currently_employed_yes" data-parsley-required-if-checked-message="This value is required"
+                               data-read="true" data-read-type="single" data-read-if-checked="#currently_employed_yes"><br>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="externalemail" class="control-label col-md-4">
+                    Your non-Institutional email address *<br>
+                    <small style="font-weight: normal">Please provide an email address that is unlikely to change if you move to a new institution or employer, in case we need to contact you regarding your dataset in the future.</small>
+                </label>
+                <div class="col-md-7">
+                    <input type="text" class="form-control" id="externalemail"
+                           data-parsley-required="true" data-parsley-type="email"
+                           data-read="true" data-read-type="single">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="software_information" class="control-label col-md-4">
+                    Useful information about software required to open/process your data files<br>
+                    <small style="font-weight: normal">Add any additional information which might help the end user to open/process your data (for example, specialist software name and version).</small>
+                </label>
+                <div class="col-md-7">
+                    <textarea class="form-control" id="software_information"
+                           data-read="true" data-read-type="single"></textarea>
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <label for="additionalinfo" class="control-label col-md-4">
+                    Additional information<br>
+                    <small style="font-weight: normal">
+                        You can provide any additional information about your data here, for example, if you need the
+                        link to your data urgently (our normal time for sending back the link is three working days), if
+                        this is a placeholder record, if you wish this dataset to be visible only to the reviewers etc.
+                    </small>
+                </label>
+                <div class="col-md-7">
+                    <textarea class="form-control" id="additionalinfo" style="min-height:200px;"
+                              data-read="true" data-read-type="single"></textarea>
+                </div>
+            </div>
+
+            <h2>Licensing</h2>
+
+            <div class="form-group">
+                <label for="rights" class="control-label col-md-4">
+                    Choose a licence for your data *<br>
+                    <small style="font-weight: normal">Please choose a licence for your data. Our recommended licence type is CC BY.
+                        You can read information about available licences <a href="http://www.data.xxxxxxx.ac.uk/licenses">here</a>
+                        and a nice graphic explaining licence types can be viewed <a href="http://creativecommons.org.au/know-your-rights/">here.</a></small>
+                </label>
+                <div class="col-md-5">
+                    <input type="radio" name="rights" id="rights_ccby" value="CC BY 4.0"
+                           data-parsley-required="true" data-parsley-required-message="You must select a licence"
+                           data-read="true" data-read-type="single">
+                    <label for="rights_ccby">CC BY 4.0</label><br>
+
+                    <input type="radio" name="rights" id="rights_ccbysa" value="CC BY-SA 4.0"
+                           data-parsley-required="true" data-parsley-required-message="You must select a licence"
+                           data-read="true" data-read-type="single">
+                    <label for="rights_ccbysa">CC BY-SA 4.0</label><br>
+
+                    <input type="radio" name="rights" id="rights_ccbynd" value="CC BY-ND 4.0"
+                           data-parsley-required="true" data-parsley-required-message="You must select a licence"
+                           data-read="true" data-read-type="single">
+                    <label for="rights_ccbynd">CC BY-ND 4.0</label><br>
+
+                    <input type="radio" name="rights" id="rights_ccbync" value="CC BY-NC 4.0"
+                           data-parsley-required="true" data-parsley-required-message="You must select a licence"
+                           data-read="true" data-read-type="single">
+                    <label for="rights_ccbync">CC BY-NC 4.0</label><br>
+
+                    <input type="radio" name="rights" id="rights_ccbyncsa" value="CC BY-NC-SA 4.0"
+                           data-parsley-required="true" data-parsley-required-message="You must select a licence"
+                           data-read="true" data-read-type="single">
+                    <label for="rights_ccbyncsa">CC BY-NC-SA 4.0</label><br>
+
+                    <input type="radio" name="rights" id="rights_ccbyncnd" value="CC BY-NC-ND 4.0"
+                           data-parsley-required="true" data-parsley-required-message="You must select a licence"
+                           data-read="true" data-read-type="single">
+                    <label for="rights_ccbyncnd">CC BY-NC-ND 4.0</label><br>
+
+                    <input type="radio" name="rights" id="rights_cc0" value="CC0"
+                           data-parsley-required="true" data-parsley-required-message="You must select a licence"
+                           data-read="true" data-read-type="single">
+                    <label for="rights_cc0">CC0</label><br>
+
+                    <input type="radio" name="rights" id="rights_gplv3" value="GPLv3"
+                           data-parsley-required="true" data-parsley-required-message="You must select a licence"
+                           data-read="true" data-read-type="single">
+                    <label for="rights_gplv3">GPLv3</label><br>
+
+                    <input type="radio" name="rights" id="rights_other" value="Other"
+                           data-parsley-required="true" data-parsley-required-message="You must select a licence"
+                           data-read="true" data-read-type="single">
+                    <label for="rights_other">Other</label><br>
+
+                    <div id="if_rights_other" style="display:none">
+                        <label for="other_licence___name" class="control-label col-md-4">
+                            Licence Name *
+                        </label>
+                        <div class="col-md-7">
+                            <input type="text" class="form-control" id="other_license___text"
+                                   data-parsley-validate-if-empty="true" data-parsley-required-if-checked="#rights_other" data-parsley-required-if-checked-message="This value is required"
+                                   data-read="true" data-read-type="single" data-read-separator="___" data-read-if-checked="#rights_other"><br>
+                        </div>
+
+                        <label for="other_licence___uri" class="control-label col-md-4">
+                            Licence URL
+                        </label>
+                        <div class="col-md-7">
+                            <input type="text" class="form-control" id="other_license___uri"
+                                   data-read="true" data-read-type="single" data-read-separator="___" data-read-if-checked="#rights_other"><br>
+                            <small style="font-weight: normal">(please enter the full hyperlink, with the leading http)</small>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <h2>Publicise your dataset</h2>
+
+            <div class="form-group">
+                <div class="col-md-4" style="text-align: right;">
+                    <strong>Would you like us to publicise information about your data via our Twitter account? *</strong>
+                </div>
+                <div class="col-md-5">
+                    <input type="radio" name="publicise" id="publicise_yes" value="true"
+                           data-parsley-required="true"
+                           data-read="true" data-read-type="single">
+                    <label for="publicise_yes" class="control-label" style="text-align:left; margin-right: 10px">
+                        Yes
+                    </label>
+                    <br>
+                    <input type="radio" name="publicise" id="publicise_no" value="false"
+                           data-parsley-required="true"
+                           data-read="true" data-read-type="single">
+                    <label for="publicise_no" class="control-label" style="text-align:left;">
+                        No
+                    </label>
+                </div>
+            </div>
+
+            <div id="if_publicise" style="display: none">
+                <div class="form-group">
+                    <label for="twitter" class="control-label col-md-4">
+                        Twitter handles<br>
+                        <small style="font-weight: normal">If you or your department/institution have Twitter handles, please enter them here so we can mention them in our messages.</small>
+                    </label>
+                    <div class="col-md-7">
+                        <input type="text" class="form-control" id="twitter"
+                               data-read="true" data-read-type="single" data-read-if-checked="#publicise_yes"><br>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <h2>Data Files</h2>
+
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <p>Individual files must be less than 2Gb, but the total size of the dataset can be up to 20Gb.</p>
+                    <p>If you are uploading multiple files, consider zipping your files to make it easier for the end user to download your files.</p>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="file" class="control-label col-md-4">Choose file</label>
+                <div class="col-md-7">
+                    <div class="input-group">
+                        <label class="input-group-btn">
+                            <span class="btn btn-primary">
+                                Browse&hellip; <input id="file" name="file" type="file" style="display: none;">
+                            </span>
+                        </label>
+                        <input type="text" class="form-control" readonly>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12" style="text-align: right; font-weight: bold; margin-bottom: 20px;"><span id="sum_file_sizes">Nothing yet</span> uploaded/queued, <span id="remaining_file_sizes">0</span> remaining</div>
+            </div>
+            <div class="row">
+                <div class="col-md-12"><div id="upload_queue"></div></div>
+            </div>
+            <div id="queued_file_template" style="display:none">
+                <div style="margin-bottom: 30px; padding-bottom: 10px; border-bottom: 1px dashed #cccccc">
+                    <div class="row" style="margin-bottom: 20px;">
+                        <div class="col-md-5 queued_file_filename" style="font-weight: bold; font-size: 120%">FILENAME</div>
+                        <div class="col-md-4 not_yet_uploaded" style="font-weight: bold; color: #cc0000;">NOT YET UPLOADED</div>
+                        <div class="col-md-3 queued_file_size" style="text-align: right">FILESIZE</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-10">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <label for="file_format" class="control-label file_format_label">Format</label>
+                            </div>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control file_format_input" name="file_format" style="margin: 0px 0px 10px 0px">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <label for="software" class="control-label software_label">Software</label>
+                            </div>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control software_input" name="software"><br>
+                                <small style="font-weight: normal">Please indicate indicate the name of software needed to
+                                    read your files or any other information that someone might find useful when trying to
+                                    open/process your data files.</small>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="col-md-2" style="text-align: right">
+                            <button class="btn btn-primary file_upload_button" style="margin: 0px 0px 10px 0px">Upload</button><br>
+                            <button class="btn btn-danger file_remove_button">Remove</button>
+                        </div>
+                    </div>
+                    <div class="row upload_bar" style="display:none; padding-top: 20px; padding-bottom: 20px;">
+                        <div class="col-md-10">
+                            <div class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                                <div class="progress-bar progress-bar-success" style="width:0%;"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-2" style="text-align: right;">
+                            <button class="btn btn-danger upload_cancel_button">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="uploaded_file_template" style="display:none">
+                <div class="row" style="margin-bottom: 20px;">
+                    <div class="col-md-5 uploaded_file_filename" style="font-weight: bold; font-size: 120%">FILENAME</div>
+                    <div class="col-md-4 successfully_uploaded" style="font-weight: bold; color: #00cc00;">SUCCESSFULLY UPLOADED</div>
+                    <div class="col-md-3 uploaded_file_size" style="text-align: right">FILESIZE</div>
+                </div>
+                <div class="row" style="margin-bottom: 30px; padding-bottom: 10px; border-bottom: 1px dashed #cccccc">
+                    <div class="col-md-10">
+                        <div class="row">
+                            <div class="col-md-3" style="font-weight: bold;">
+                                Format
+                            </div>
+                            <div class="col-md-9 file_format">
+                                FORMAT
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3" style="font-weight: bold;">
+                                Software
+                            </div>
+                            <div class="col-md-9 software">
+                                SOFTWARE
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2" style="text-align: right">
+                        <button class="btn btn-danger file_remove_button">Remove</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <p>You are strongly encouraged to submit your dataset in open formats, to facilitate long-term preservation and
+                        accessibility of your data. However, we recognise that it is not always possible to export all data files
+                        into open formats. Therefore, research data in proprietary file formats will be also accepted by the
+                        Repository, but we will ask you to provide information about software needed to read and process your
+                        files.</p>
+
+                    <p>Guidance on choosing file formats is available here.</p>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 40px;">
+                <div class="col-md-12">
+                    <p>Please confirm if you have read and accepted the data deposition <a href="http://osc.xxxxxxxx.ac.uk/repository/repository-terms-use">terms and conditions</a></p>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-4">
+                    <label for="terms_and_conditions" class="control-label" style="text-align:left">
+                        I understand and agree to the terms and conditions *
+                    </label>
+                </div>
+                <div class="col-md-5">
+                    <input type="checkbox" name="terms_and_conditions" id="terms_and_conditions" value="true" style="margin-top: 12px;"
+                           data-parsley-required="true" data-parsley-required-message="You must agree to the terms and conditions"
+                           data-read="true" data-read-type="single">
+                </div>
+            </div>
+
+
+            <div class="row" style="margin-top: 40px; margin-bottom: 40px;">
+                <div class="col-md-6">
+                    <button id="save" class="btn btn-info" href="#">Save and Return Later</button>
+                </div>
+                <div class="col-md-6">
+                    <button id="submit" class="btn btn-success" href="#">Submit</button>
+                </div>
+            </div>
+
+
+        </form>
+
+    </div>
+</div>

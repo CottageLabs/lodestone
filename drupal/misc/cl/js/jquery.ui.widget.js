@@ -1,0 +1,1 @@
+../../../../magnificent-octopus/octopus/static/vendor/jquery-ui-1.11.1/jquery.ui.widget.js

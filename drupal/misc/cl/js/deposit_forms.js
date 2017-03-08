@@ -1,0 +1,1 @@
+../../../../service/static/js/deposit_forms.js

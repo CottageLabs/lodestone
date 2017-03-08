@@ -1,0 +1,125 @@
+<a href="{{back_link}}">Back to list page</a>
+
+{{#if title}}
+    <h1>{{title}}</h1>
+{{else}}
+    <h1>{{id}}</h1>
+{{/if}}
+
+<dl class="dl-horizontal">
+    <h2>Authors</h2>
+    {{#each authors}}
+        <dt>Given names</dt><dd>{{given_names}}</dd>
+        <dt>Family name</dt><dd>{{family_name}}</dd>
+        <dt>ORCID</dt><dd>{{#if orcid}}{{orcid}}{{else}}-{{/if}}</dd>
+        <dt>CRSid</dt><dd>{{#if crsid}}{{crsid}}{{else}}-{{/if}}</dd>
+        <dt>Non-Institutional email address</dt><dd>{{email_id}}</dd><br/>
+    {{/each}}
+    <hr/>
+    <h2>Supervisors</h2>
+    {{#each supervisors}}
+        <dt>Given names</dt><dd>{{given_names}}</dd>
+        <dt>Family name</dt><dd>{{family_name}}</dd>
+        <dt>ORCID</dt><dd>{{#if orcid}}{{orcid}}{{else}}-{{/if}}</dd><br/>
+    {{/each}}
+    <hr/>
+    <h2>Thesis information</h2>
+    <dt>Awarding Institution</dt><dd>{{#if awarding_institution}}{{awarding_institution}}{{else}}-{{/if}}</dd>
+    <dt>College</dt><dd>{{#if college}}{{college}}{{else}}-{{/if}}</dd>
+    <dt>Faculty / Department</dt><dd>{{#if faculty}}{{faculty}}{{else}}-{{/if}}</dd>
+    <dt>Qualification level</dt><dd>{{qualification_level}}</dd>
+    <dt>Degree</dt><dd>{{degree}}</dd>
+    <dt>Degree title</dt><dd>{{#if degree_title}}{{degree_title}}{{else}}-{{/if}}</dd>
+    <dt>Thesis title</dt><dd>{{#if title}}{{title}}{{else}}-{{/if}}</dd>
+    <dt>Date awarded</dt><dd>{{date_awarded}}</dd>
+    <dt>Abstract</dt><dd>{{abstract}}</dd>
+    <dt>Keywords</dt><dd>
+    {{#each keywords}}
+        {{this}}<br/>
+    {{/each}}
+    </dd>
+    <dt>Primary Language</dt><dd>{{language}}</dd>
+    {{#if other_languages}}
+    <dt>Other languages</dt><dd>
+    {{#each other_languages}}
+        {{this}}<br/>
+    {{/each}}
+    </dd>
+    {{/if}}
+    <dt>Funding / Sponsorship</dt><dd>{{#if funding}}{{funding}}{{else}}-{{/if}}</dd>
+    <hr/>
+    <h2>License and Rights</h2>
+    <hr/>
+
+    <dt>Intellectual property agreement confirmed</dt>
+    {{#if open_access_ip_confirmed}}
+        <dd><span class="glyphicon glyphicon-ok success" aria-hidden="true"></span> Yes</dd>
+        <dd>I confirm that the open access version of my thesis does not infringe the intellectual property
+            rights of a third party OR that all parties with a claim to intellectual property contained in
+            any content in my thesis have agreed to the deposit of my thesis in the repository and dissemination online.</dd>
+    {{else}}
+        <dd><span class="glyphicon glyphicon-remove failure" aria-hidden="true"></span> No</dd>
+        <dd>I do not confirm that the open access version of my thesis does not infringe the intellectual property
+            rights of a third party OR that all parties with a claim to intellectual property contained in
+            any content in my thesis have agreed to the deposit of my thesis in the repository and dissemination online.</dd>
+    {{/if}}
+    <dt>Confidential information agreement confirmed</dt>
+    {{#if open_access_confidentiality_confirmed}}
+        <dd><span class="glyphicon glyphicon-ok success" aria-hidden="true"></span> Yes</dd>
+        <dd>I confirm that the open access version of my thesis does not contain confidential information or
+            that I have obtained permission from the authorised party to make the confidential information public.*</dd>
+    {{else}}
+        <dd><span class="glyphicon glyphicon-remove failure" aria-hidden="true"></span> No</dd>
+        <dd>I do not confirm that the open access version of my thesis does not contain confidential information or
+            that I have obtained permission from the authorised party to make the confidential information public.*</dd>
+    {{/if}}
+    <dt>Notes on third party copyright</dt><dd>{{#if third_party_copyright_notes}}{{third_party_copyright_notes}}{{else}}-{{/if}}</dd>
+    {{#if comments}}
+        <dt>Comments</dt><dd>{{#if comments}}{{comments}}{{else}}-{{/if}}</dd>
+    {{/if}}
+    <dt>Access condition</dt><dd>{{access.human_type}}</dd>
+    {{#if access.reason}}
+        <dt>Reason for restricting access</dt><dd>{{access.reason}}</dd>
+    {{/if}}
+    {{#if license.uri}}
+        <dt>License</dt><dd><a href="{{license.uri}}">{{license.text}}</a></dd>
+    {{else}}
+        <dt>License</dt><dd>{{license.text}}</dd>
+    {{/if}}
+    <dt>Authenticity agreement confirmed</dt>
+    {{#if authenticity_agreement}}
+        <dd><span class="glyphicon glyphicon-ok success" aria-hidden="true"></span> Yes</dd>
+    {{else}}
+        <dd><span class="glyphicon glyphicon-remove failure" aria-hidden="true"></span> No</dd>
+    {{/if}}
+    <dt>Distribution license granted</dt>
+    {{#if distribution_license}}
+        <dd><span class="glyphicon glyphicon-ok success" aria-hidden="true"></span> Yes</dd>
+    {{else}}
+        <dd><span class="glyphicon glyphicon-remove failure" aria-hidden="true"></span> No</dd>
+    {{/if}}
+    <hr>
+    {{#if files}}
+    <h2>Files</h2>
+    {{#each files}}
+        {{#if visible}}
+            <h3><a href="{{access_url}}">{{file_name}}</a></h3>
+            <dt>File description</dt><dd>{{#if file_description}}{{file_description}}{{else}}-{{/if}}</dd>
+          <dt>Software used</dt><dd>{{#if software}}{{software}}{{else}}-{{/if}}</dd>
+        {{/if}}
+    {{/each}}
+    <hr>
+    {{/if}}
+    <h2>Submission Details</h2>
+    <dt>Status</dt><dd>{{status.display}}</dd>
+    <dt>Created</dt><dd>{{human_created_date}}</dd>
+    <dt>Last updated</dt><dd>{{human_last_updated}}</dd>
+    {{#if user_auth}}
+      {{#if user_auth.name}}
+          <dt>User</dt><dd>{{user_auth.name}}</dd>
+      {{/if}}
+    {{/if}}
+    {{#if remote_repository_url}}
+    <dt>Repository URL</dt><dd><a href="{{remote_repository_url}}">{{remote_repository_url}}</a></dd>
+    {{/if}}
+</dl>

@@ -1,0 +1,500 @@
+   39  rails server
+   40  rails server
+   41  rails server
+   42  rails server
+   43  rails server
+   44  rails server
+   45  rails server
+   46  rails server
+   47  rails server
+   48  rake jetty:stop
+   49  rake env=test jetty:start
+   50  grep -rl 8888 ./*
+   51  vim ./config/blacklight.yml
+   52  rake jetty:stop
+   53  rake RAILS_ENV=test jetty:start
+   54  rails server
+   55  rails RAILS_ENV=test server
+   56  rails s -e test server
+   57  rails s -e test server
+   58  rails s -e test
+   59  rake jetty:stop
+   60  rake jetty:start
+   61  rails server
+   62  ps fx
+   63  rake jetty:stop
+   64  rake jetty:start
+   65  ls -l
+   66  ls -l jetty/
+   67  ls -l jetty/solr
+   68  ls -l jetty/solr/blacklight-core/
+   69  ls -l jetty/solr/blacklight-core/data/
+   70  ls -l jetty/solr/blacklight-core/data/index/
+   71  rm jetty/solr/blacklight-core/data/index/write.lock 
+   72  rake jetty:stop
+   73  rake jetty:start
+   74  rails server
+   75  rake jetty:stop
+   76  rake RAILS_ENV=test jetty:start
+   77  rake jetty:stop
+   78  ps fx
+   79  kill -9 16212
+   80  rake RAILS_ENV=test jetty:start
+   81  rake jetty:start
+   82  rails server
+   83  rake railjetty:stop
+   84  ps fx
+   85  rake RAILS_ENV=test jetty:stop
+   86  ps fx
+   87  ps fx | grep jetty
+   88  ps fx | grep -i solr
+   89  ls -l jetty/solr/data/
+   90  ls -l jetty/solr/
+   91  ls -l jetty/solr/blacklight-core/
+   92  ls -l jetty/solr/blacklight-core/data/
+   93  ls -l jetty/solr/blacklight-core/data/index/
+   94  rm -r jetty/solr/blacklight-core/data/index/write.lock 
+   95  rake RAILS_ENV=test jetty:start
+   96  rake RAILS_ENV=test jetty:start
+   97  ps fx
+   98  kill -9 1179
+   99  rake RAILS_ENV=test jetty:start
+  100  rake RAILS_ENV=test jetty:stop
+  101  rake jetty:start
+  102  rails server
+  103  rake jetty:stop
+  104  rake RAILS_ENV=test jetty:stop
+  105  rake RAILS_ENV=test jetty:start
+  106  rake RAILS_ENV=test jetty:stop
+  107  rake jetty:start
+  108  rails server
+  109  rake jetty:stop
+  110  rake RAILS_ENV=test jetty:start
+  111  rake RAILS_ENV=test jetty:stop
+  112  rake jetty:start
+  113  rails server
+  114  rake RAILS_ENV=test jetty:stop
+  115  rake jetty:stop
+  116  rake RAILS_ENV=test jetty:start
+  117  rake RAILS_ENV=test jetty:stop
+  118  rake jetty:start
+  119  rails server
+  120  rake jetty:stop
+  121  rake RAILS_ENV=test jetty:start
+  122  rake RAILS_ENV=test jetty:stop
+  123  cd /media/anusha/Anusha/Anusha/DigitalNest/src/rails/colligo
+  124  screen -ls
+  125  screen
+  126  exit
+  127  /usr/bin/plaidchat 
+  128  /usr/bin/plaidchat 
+  129  exit
+  130  ssh nandi
+  131  exit
+  132  ls -l /media/anusha/
+  133  ls -l /media/anusha/
+  134  cat fstab
+  135  cat /etc/fstab
+  136  du
+  137  df -h
+  138  exit
+  139  exit
+  140  ls -l /media/
+  141  ls -l /media/anusha/
+  142  ls -l /data/
+  143  exit
+  144  ls -l /etc/fstab
+  145  cat /etc/fstab
+  146  ls -l /media/anusha/
+  147  ls -l /media/anusha/Anusha/
+  148  ls -l /mnt/
+  149  ls -l
+  150  ls -l /
+  151  ls -l /media/
+  152  ls -l /mnt/
+  153  mkdir /backup
+  154  ls -l /backup/
+  155  ls -l /data/
+  156  ls -l /media/anusha/Anusha/
+  157  ls -l /media/anusha/
+  158  ln -s /data/ /media/anusha/Anusha/
+  159  ln -s /backup/ /media/anusha/Backups/
+  160  sudo ln -s /backup/ /media/anusha/Backups/
+  161  ls -l /
+  162  ls -l /data/
+  163  ls -l /backup/
+  164  ln --help
+  165  suod ln -s /data/ /media/anusha/Anusha/
+  166  sudo ln -s /data/ /media/anusha/Anusha/
+  167  ls -l /media/anusha/Anusha/
+  168  cd /media/anusha/Anusha/
+  169  rm data/
+  170  rm -r data/
+  171  rm data
+  172  ls -l
+  173  cd ../Backups/
+  174  ls -l
+  175  rm backup
+  176  sudo rm backup
+  177  ls -l /
+  178  sudo chown -R anusha:anusha /backup/
+  179  sudo chown -R anusha:anusha /data/
+  180  ls -l /media/
+  181  ls -l /media/anusha/
+  182  sudo ln -s /media/anusha/Anusha/ /data/
+  183  ls -l /
+  184  ls -l /data/
+  185  rm /data/Anusha
+  186  rm -r /data/
+  187  ls -l /
+  188  ls -l /data/
+  189  rm -r /data/
+  190  sudo rm -r /data/
+  191  ls -l /backup/
+  192  sudo rm -r /backup/
+  193  sudo ln -s /media/anusha/Anusha/Anusha/ /data
+  194  ls -l /
+  195  sudo ln -s /media/anusha/Backups/ /backup
+  196  ls -l /
+  197  rm backup
+  198  rm /backup
+  199  cd ~
+  200  sudo rm /backup
+  201  sudo ln -s /media/anusha/Backups/Backups/ /backup
+  202  ls -l /etc/fstab
+  203  sudo cat /etc/fstab
+  204  screen -ls
+  205  screen
+  206  /usr/bin/plaidchat 
+  207  ls -l /media/anusha/
+  208  ls -l /media/anusha/A
+  209  ls -l /
+  210  ls -l /
+  211  ls -l /media/
+  212  ls -l /media/anusha/
+  213  exit
+  214  cd /data/DigitalNest/src/rails/colligo
+  215  tree spec/views/ >> ~/Desktop/tree_spec_view.txt 
+  216  git status
+  217  git diff config/deploy.rb
+  218  cap testing deploy
+  219  source ~/.bash_profile 
+  220  cap testing deploy
+  221  ssh data_papers_aws 
+  222  exit
+  223  cd /data/DigitalNest/src/rails/colligo
+  224  ls -l
+  225  rake RAILS_ENV=test jetty:start
+  226  source ~/.bash_profile 
+  227  rake RAILS_ENV=test jetty:start
+  228  rspec spec/views/shared/_bookmark_control.html.erb_spec.rb 
+  229  cd ../blacklight/
+  230  ls -l spec/views/
+  231  ls -l spec/views/catalog
+  232  find ./* -name *per_page*
+  233  vim ./spec/views/catalog/_sort_and_per_page.html.erb_spec.rb
+  234  vim ./spec/views/catalog/_paginate_compact.html.erb_spec.rb 
+  235  cp ./spec/views/catalog/_paginate_compact.html.erb_spec.rb ../colligo/spec/views/shared/
+  236  cd ../colligo
+  237  rspec spec/views/shared/_paginate_compact.html.erb_spec.rb 
+  238  rspec spec/views/shared/_paginate_compact.html.erb_spec.rb 
+  239  rm spec/views/shared/_paginate_compact.html.erb_spec.rb 
+  240  rspec spec/views/shared/_per_page_widget.html.erb_spec.rb 
+  241  rspec spec/views/shared/_per_page_widget.html.erb_spec.rb 
+  242  rspec spec/views/shared/_per_page_widget.html.erb_spec.rb 
+  243  rspec spec/views/shared/_per_page_widget.html.erb_spec.rb 
+  244  rspec spec/views/shared/_per_page_widget.html.erb_spec.rb 
+  245  rspec spec/views/shared/_per_page_widget.html.erb_spec.rb 
+  246  rspec spec/views/shared/_per_page_widget.html.erb_spec.rb 
+  247  rspec spec/views/shared/_per_page_widget.html.erb_spec.rb 
+  248  rspec spec/views/shared/_per_page_widget.html.erb_spec.rb 
+  249  rspec spec/views/shared/_per_page_widget.html.erb_spec.rb 
+  250  rspec spec/views/shared/_per_page_widget.html.erb_spec.rb 
+  251  rspec spec/views/shared/_per_page_widget.html.erb_spec.rb 
+  252  rspec spec/views/shared/_per_page_widget.html.erb_spec.rb 
+  253  rspec spec/views/shared/_sort_widget.html.erb_spec.rb 
+  254  rspec spec/views/shared/_sort_widget.html.erb_spec.rb 
+  255  rspec spec/views/shared/_sort_widget.html.erb_spec.rb 
+  256  rspec spec/views/shared/_sort_widget.html.erb_spec.rb 
+  257  rspec spec/views/shared/_sort_widget.html.erb_spec.rb 
+  258  rspec spec/views/shared/_sort_widget.html.erb_spec.rb 
+  259  rspec spec/views/shared/_sort_widget.html.erb_spec.rb 
+  260  rspec spec/views/shared/_sort_widget.html.erb_spec.rb 
+  261  rspec spec/views/shared/_sort_widget.html.erb_spec.rb 
+  262  rspec spec/views/shared/_sort_widget.html.erb_spec.rb 
+  263  cd ../blacklight/
+  264  cp ./spec/views/catalog/_paginate_compact.html.erb_spec.rb ../colligo/spec/views/shared/
+  265  rspec spec/views/shared/_
+  266  cd ../colligo
+  267  rspec spec/views/shared/_paginate_compact.html.erb_spec.rb 
+  268  rspec spec/views/shared/_paginate_compact.html.erb_spec.rb 
+  269  tree app/views/shared/
+  270  tree spec/views/shared/
+  271  tree spec/views/ >> ~/Desktop/tree_view.txt
+  272  tree spec/views/ > ~/Desktop/tree_view.txt
+  273  tree spec/views/ > ~/Desktop/tree_app_view.txt
+  274  tree spec/views/ > ~/Desktop/tree_spec_view.txt
+  275  tree app/views/ > ~/Desktop/tree_app_view.txt
+  276  rspec spec/views/bookmarks/_index.html.erb_spec.rb 
+  277  rspec spec/views/bookmarks/_index.html.erb_spec.rb 
+  278  rspec spec/views/bookmarks/_index.html.erb_spec.rb 
+  279  rspec spec/views/bookmarks/_index.html.erb_spec.rb 
+  280  rspec spec/views/bookmarks/_index.html.erb_spec.rb 
+  281  rspec spec/views/bookmarks/_index.html.erb_spec.rb 
+  282  rspec spec/views/bookmarks/_index.html.erb_spec.rb 
+  283  rspec spec/views/bookmarks/_index.html.erb_spec.rb 
+  284  rspec spec/views/bookmarks/_index.html.erb_spec.rb 
+  285  rspec spec/views/bookmarks/_index.html.erb_spec.rb 
+  286  rspec spec/views/bookmarks/_index.html.erb_spec.rb 
+  287  rspec spec/views/bookmarks/_index.html.erb_spec.rb 
+  288  rspec spec/views/bookmarks/_index.html.erb_spec.rb 
+  289  rspec spec/views/bookmarks/_index.html.erb_spec.rb 
+  290  rspec spec/views/bookmarks/_index.html.erb_spec.rb 
+  291  rspec spec/views/bookmarks/_index.html.erb_spec.rb 
+  292  rspec spec/views/bookmarks/_index.html.erb_spec.rb 
+  293  rspec spec/views/bookmarks/_index.html.erb_spec.rb 
+  294  rspec spec/views/folio/_breadcrumbs.html.erb_spec.rb 
+  295  rspec spec/views/folio/_breadcrumbs.html.erb_spec.rb 
+  296  rspec spec/views/folio/_breadcrumbs.html.erb_spec.rb 
+  297  rspec spec/views/folio/_breadcrumbs.html.erb_spec.rb 
+  298  rspec spec/views/folio/_breadcrumbs.html.erb_spec.rb 
+  299  rspec spec/views/folio/_breadcrumbs.html.erb_spec.rb 
+  300  rspec spec/views/folio/_breadcrumbs.html.erb_spec.rb 
+  301  rspec spec/views/folio/_breadcrumbs.html.erb_spec.rb 
+  302  rspec spec/views/folio/_breadcrumbs.html.erb_spec.rb 
+  303  rspec spec/views/folio/_breadcrumbs.html.erb_spec.rb 
+  304  rspec spec/views/folio/_breadcrumbs.html.erb_spec.rb 
+  305  rspec spec/views/folio/_breadcrumbs.html.erb_spec.rb 
+  306  rspec spec/views/folio/_breadcrumbs.html.erb_spec.rb 
+  307  rspec spec/views/folio/_breadcrumbs.html.erb_spec.rb 
+  308  rspec spec/views/folio/_breadcrumbs.html.erb_spec.rb 
+  309  rspec spec/views/folio/_breadcrumbs.html.erb_spec.rb 
+  310  rspec spec/views/folio/_breadcrumbs.html.erb_spec.rb 
+  311  rspec spec/views/folio/_breadcrumbs.html.erb_spec.rb 
+  312  rspec spec/views/folio/_breadcrumbs.html.erb_spec.rb 
+  313  rspec spec/views/folio/_breadcrumbs.html.erb_spec.rb 
+  314  rspec spec/views/folio/_breadcrumbs.html.erb_spec.rb 
+  315  rspec spec/views/folio/_breadcrumbs.html.erb_spec.rb 
+  316  rspec spec/views/folio/_decription.html.erb_spec.rb 
+  317  rspec spec/views/folio/_decription.html.erb_spec.rb 
+  318  rspec spec/views/folio/_decription.html.erb_spec.rb 
+  319  rspec spec/views/folio/_decription.html.erb_spec.rb 
+  320  rspec spec/views/folio/_decription.html.erb_spec.rb 
+  321  rspec spec/views/folio/_decription.html.erb_spec.rb 
+  322  rspec spec/views/folio/_decription.html.erb_spec.rb 
+  323  rspec spec/views/folio/_decription.html.erb_spec.rb 
+  324  rspec spec/views/folio/_decription.html.erb_spec.rb 
+  325  rspec spec/views/folio/_decription.html.erb_spec.rb 
+  326  rspec spec/views/folio/_decription.html.erb_spec.rb 
+  327  rspec spec/views/folio/_decription.html.erb_spec.rb 
+  328  rspec spec/views/folio/_decription.html.erb_spec.rb 
+  329  rspec spec/views/folio/_decription.html.erb_spec.rb 
+  330  rspec spec/views/folio/_decription.html.erb_spec.rb 
+  331  rspec spec/views/folio/_footer.html.erb_spec.rb 
+  332  rspec spec/views/folio/_footer.html.erb_spec.rb 
+  333  rspec spec/views/folio/_footer.html.erb_spec.rb 
+  334  rspec spec/views/folio/_footer.html.erb_spec.rb 
+  335  rspec spec/views/folio/_footer.html.erb_spec.rb 
+  336  rspec spec/views/folio/_footer.html.erb_spec.rb 
+  337  rspec spec/views/folio/_footer.html.erb_spec.rb 
+  338  rspec spec/views/folio/_footer.html.erb_spec.rb 
+  339  rspec spec/views/folio/_header.html.erb_spec.rb 
+  340  rspec spec/views/folio/_header.html.erb_spec.rb 
+  341  rspec spec/views/folio/_header.html.erb_spec.rb 
+  342  rspec spec/views/folio/_header.html.erb_spec.rb 
+  343  rspec spec/views/folio/_header.html.erb_spec.rb 
+  344  rspec spec/views/folio/_manifest.html.erb_spec.rb 
+  345  rspec spec/views/folio/_manifest.html.erb_spec.rb 
+  346  rspec spec/views/folio/_manifest.html.erb_spec.rb 
+  347  rspec spec/views/folio/_manifest.html.erb_spec.rb 
+  348  rspec spec/views/folio/_manifest.html.erb_spec.rb 
+  349  rspec spec/views/folio/_next_folio.html.erb_spec.rb 
+  350  rspec spec/views/folio/_next_folio.html.erb_spec.rb 
+  351  rspec spec/views/folio/_next_folio.html.erb_spec.rb 
+  352  rspec spec/views/folio/_next_folio.html.erb_spec.rb 
+  353  rspec spec/views/folio/_next_folio.html.erb_spec.rb 
+  354  rspec spec/views/folio/_previous_folio.html.erb_spec.rb 
+  355  rspec spec/views/folio/_next_folio.html.erb_spec.rb 
+  356  rspec spec/views/folio/show.html.erb_spec.rb 
+  357  cd ../blacklight/
+  358  ls -l spec/views/_user_util_links.html.erb_spec.rb 
+  359  cp spec/views/_user_util_links.html.erb_spec.rb ../colligo/spec/views/
+  360  grep -rl render_nav_actions spec/*
+  361  vim spec/helpers/blacklight_help
+  362  find ./* -name *history*
+  363  vim ./app/views/blacklight/nav/_search_history.html.erb
+  364  cd ..
+  365  cd colligo
+  366  rspec spec/views/_user_util_links.html.erb_spec.rb 
+  367  rspec spec/views/_user_util_links.html.erb_spec.rb 
+  368  rspec spec/views/_user_util_links.html.erb_spec.rb 
+  369  rspec spec/views/_user_util_links.html.erb_spec.rb 
+  370  rspec spec/views/_user_util_links.html.erb_spec.rb 
+  371  rspec spec/views/_user_util_links.html.erb_spec.rb 
+  372  rspec spec/views/_user_util_links.html.erb_spec.rb 
+  373  rspec spec/views/_user_util_links.html.erb_spec.rb 
+  374  rspec spec/views/_user_util_links.html.erb_spec.rb 
+  375  rspec spec/views/_user_util_links.html.erb_spec.rb 
+  376  rspec spec/views/_user_util_links.html.erb_spec.rb 
+  377  rspec spec/views/_user_util_links.html.erb_spec.rb 
+  378  rspec spec/views/_user_util_links.html.erb_spec.rb 
+  379  rspec spec/views/_user_util_links.html.erb_spec.rb 
+  380  rspec spec/views/kaminari/colligo/_next_page.html.erb_spec.rb 
+  381  rspec spec/views/kaminari/colligo/_next_page.html.erb_spec.rb 
+  382  rspec spec/views/kaminari/colligo/_next_page.html.erb_spec.rb 
+  383  rspec spec/views/kaminari/colligo_compact/_next_page.html.erb_spec.rb 
+  384  rspec spec/views/kaminari/colligo_compact/_next_page.html.erb_spec.rb 
+  385  rspec spec/views/kaminari/colligo_compact/_next_page.html.erb_spec.rb 
+  386  rspec spec/views/kaminari/colligo_compact/_next_page.html.erb_spec.rb 
+  387  rspec spec/views/kaminari/colligo_compact/_next_page.html.erb_spec.rb 
+  388  rspec spec/views/kaminari/colligo_compact/_prev_page.html.erb_spec.rb 
+  389  rspec spec/views/kaminari/colligo_compact/_prev_page.html.erb_spec.rb 
+  390  rspec spec/views/kaminari/colligo_compact/_prev_page.html.erb_spec.rb 
+  391  rspec spec/views/kaminari/colligo_compact/_prev_page.html.erb_spec.rb 
+  392  rspec spec/views/kaminari/colligo_compact/_paginator.html.erb_spec.rb 
+  393  rspec spec/views/kaminari/colligo_compact/_paginator.html.erb_spec.rb 
+  394  rspec spec/views/kaminari/colligo_compact/_paginator.html.erb_spec.rb 
+  395  rspec spec/views/kaminari/colligo_compact/_paginator.html.erb_spec.rb 
+  396  rspec spec/views/kaminari/colligo_compact/_paginator.html.erb_spec.rb 
+  397  rspec spec/views/kaminari/colligo_compact/_paginator.html.erb_spec.rb 
+  398  rspec spec/views/kaminari/colligo_compact/_paginator.html.erb_spec.rb 
+  399  rspec spec/views/kaminari/colligo_compact/_paginator.html.erb_spec.rb 
+  400  rspec spec/views/kaminari/colligo_compact/_paginator.html.erb_spec.rb 
+  401  rspec spec/views/kaminari/colligo_compact/_paginator.html.erb_spec.rb 
+  402  [A
+  403  rspec spec/views/kaminari/colligo_compact/_paginator.html.erb_spec.rb 
+  404  rspec spec/views/kaminari/colligo_compact/_paginator.html.erb_spec.rb 
+  405  rspec spec/views/kaminari/colligo_compact/_paginator.html.erb_spec.rb 
+  406  rspec spec/views/kaminari/colligo_compact/_paginator.html.erb_spec.rb 
+  407  rspec spec/views/kaminari/colligo_compact/_paginator.html.erb_spec.rb 
+  408  rspec spec/views/kaminari/colligo_compact/_paginator.html.erb_spec.rb 
+  409  rspec spec/views/kaminari/colligo_compact/_paginator.html.erb_spec.rb 
+  410  rspec
+  411  grep -rl puts ./*
+  412  grep -rl puts ./app/*
+  413  grep -rl puts ./config
+  414  grep -rl puts ./public/ spec/
+  415  rspec spec/features/
+  416  rspec ./spec/features/search_results_per_page_spec.rb
+  417  rspec ./spec/features/search_results_per_page_spec.rb
+  418  rspec ./spec/features/search_results_per_page_spec.rb
+  419  rspec ./spec/features/search_results_per_page_spec.rb
+  420  rspec ./spec/features/search_results_per_page_spec.rb
+  421  rspec ./spec/features/search_results_per_page_spec.rb
+  422  rspec ./spec/features/
+  423  rspec ./spec/features/
+  424  rspec ./spec/features/manuscript_navbar_spec.rb 
+  425  rspec ./spec/features/manuscript_navbar_spec.rb 
+  426  rspec ./spec/features/manuscript_navbar_spec.rb 
+  427  rspec ./spec/features/manuscript_navbar_spec.rb 
+  428  rspec ./spec/features/manuscript_navbar_spec.rb 
+  429  rake RAILS_ENV=test jetty:stop
+  430  rake jetty:start
+  431  rails server
+  432  rake jetty:stop
+  433  rake RAILS_ENV=test jetty:start
+  434  rspec ./spec/features/
+  435  rspec ./spec/features/homepage_search_tab_spec.rb 
+  436  rspec ./spec/features/bookmark_spec.rb 
+  437  rspec ./spec/features/bookmark_spec.rb 
+  438  rspec ./spec/features/bookmark_spec.rb 
+  439  rspec ./spec/features/bookmark_spec.rb 
+  440  rspec ./spec/features/bookmark_spec.rb 
+  441  rspec ./spec/features/bookmark_spec.rb 
+  442  rspec ./spec/features/bookmark_spec.rb 
+  443  rspec spec/features/
+  444  git status
+  445  git diff
+  446  git add app/models/concerns/annotation_data.rb app/models/concerns/iiif_manifest_data.rb lib/data_indexer.rb app/views/shared/_annotation.html.erb app/views/shared/_transcription.html.erb spec/models/concerns/annotation_data_spec.rb spec/models/concerns/iiif_manifest_data_spec.rb spec/models/concerns/mods_data_spec.rb spec/views/shared/_annotation.html.erb_spec.rb spec/views/shared/_transcription.html.erb_spec.rb 
+  447  git status
+  448  git add spec/fixtures/annotation_records/annotation_fixtures.rb spec/fixtures/solr_documents/annotation_solr_doc.json spec/fixtures/solr_documents/annotation_solr_resp.json spec/fixtures/solr_documents/transcription_solr_doc.json spec/fixtures/solr_documents/transcription_solr_resp.json spec/fixtures/solr_documents/transcription_solr_resp_003.json 
+  449  git status
+  450  git commit -m "Adding folio img for annotations and transcriptions"
+  451  git add app/controllers/folio_controller.rb app/controllers/manuscript_controller.rb
+  452  git commit -m "Fixed deprecated warning"
+  453  git add app/views/manuscript/show.html.erb
+  454  git commit -m "Removed unneccesary css classes"
+  455  git add config/locales/blacklight.en.yml
+  456  git commit -m "Added bookmark inprogress to locale"
+  457  git add spec/controllers/catalog_controller_spec.rb spec/controllers/manuscript_controller_spec.rb spec/helpers/render_constraints_helper_spec.rb 
+  458  git log
+  459  git status
+  460  git commit -m "Updated tests for building URLs without the need to initalize search state"
+  461  git add app/helpers/facets_helper.rb app/views/catalog/_homepage/_language.html.erb app/views/catalog/_refine_search.html.erb app/views/catalog/annotation_results.html.erb app/views/catalog/manuscript_results.html.erb app/views/catalog/transcription_results.html.erb app/views/kaminari/colligo_compact/_paginator.html.erb app/views/kaminari/colligo_compact/_prev_page.html.erb app/views/shared/_header_navbar.html.erb
+  462  git commit -m "style changes"
+  463  git status
+  464  git add spec/features/bookmark_spec.rb spec/features/homepage_search_tab_spec.rb spec/features/manuscript_navbar_spec.rb spec/fixtures/solr_documents/manuscript_solr_resp.json spec/views/catalog/_annotation_search_results.html.erb_spec.rb spec/views/catalog/_homepage/_home.html.erb_spec.rb spec/views/catalog/_homepage/_home_search_form.html.erb_spec.rb spec/views/catalog/_homepage/_language.html.erb_spec.rb spec/views/catalog/_search_form.html.erb_spec.rb spec/views/catalog/_transcription_search_results.html.erb_spec.rb spec/views/manuscript/_breadcrumbs.html.erb_spec.rb spec/views/manuscript/_description/_description.html.erb_spec.rb rb_spec.rb
+  465      
+  466  git status
+  467  git add spec/features/bookmark_spec.rb spec/features/homepage_search_tab_spec.rb spec/features/manuscript_navbar_spec.rb spec/fixtures/solr_documents/manuscript_solr_resp.json spec/views/catalog/_annotation_search_results.html.erb_spec.rb spec/views/catalog/_homepage/_home.html.erb_spec.rb spec/views/catalog/_homepage/_home_search_form.html.erb_spec.rb spec/views/catalog/_homepage/_language.html.erb_spec.rb spec/views/catalog/_search_form.html.erb_spec.rb spec/views/catalog/_transcription_search_results.html.erb_spec.rb spec/views/manuscript/_breadcrumbs.html.erb_spec.rb spec/views/manuscript/_description/_description.html.erb_spec.rb
+  468  git add spec/views/manuscript/_footer.html.erb_spec.rb spec/views/manuscript/show.html.erb_spec.rb 
+  469  git add spec/views/manuscript/_footer.html.erb_spec.rb spec/views/manuscript/show.html.erb_spec.rb spec/views/shared/_header_navbar.html.erb_spec.rb spec/views/shared/_homepage_header_navbar.html.erb_spec.rb spec/views/shared/_manuscript_footer.html.erb_spec.rb spec/views/shared/_simple_constraints.html.erb_spec.rb
+  470  git status
+  471  git commit -m "Updated tests"
+  472  git add spec/controllers/folio_controller_spec.rb spec/helpers/facets_helper_spec.rb spec/views/_user_util_links.html.erb_spec.rb spec/views/bookmarks/ spec/views/catalog/_homepage/_home_modal.html.erb_spec.rb spec/views/catalog/_homepage/_language_facet_limit.html.erb_spec.rb spec/views/catalog/_refine_facet_limit.html.erb_spec.rb spec/views/catalog/_refine_facets.html.erb_spec.rb spec/views/catalog/_refine_search.html.erb_spec.rb spec/views/catalog/annotation_results.html.erb_spec.rb spec/views/catalog/manuscript_results.html.erb_spec.rb spec/views/catalog/transcription_results.html.erb_spec.rb spec/views/folio/ spec/views/kaminari/ spec/views/shared/_bookmark_control.html.erb_spec.rb spec/views/shared/_clear_all_element.html.erb_spec.rb spec/views/shared/_paginate_compact.html.erb_spec.rb spec/views/shared/_per_page_widget.html.erb_spec.rb spec/views/shared/_sort_widget.html.erb_spec.rb 
+  473  git status
+  474  git commit -m "Added tests for views"
+  475  git status
+  476  git add app/assets/javascripts/application.js app/assets/javascripts/folio_viewer.js vendor/assets/javascripts/openseadragon-viewerinputhook.js
+  477  git commit -m "js to handle page navigation from mirador in folio show"
+  478  git status
+  479  git status
+  480  git push origin develo[
+  481  git push origin develop
+  482  git status
+  483  git push origin dev
+  484  git branch
+  485  git status
+  486  rake RAILS_ENV=test jetty:stop
+  487  rake jetty:start
+  488  rails server
+  489  rake colligo:fixtures
+  490  rails server
+  491  vim ~/.ssh/config 
+  492  vim ~/.ssh/config /media/anusha/B99D-8ED3/ssh
+  493  cp -r ~/.ssh/config /media/anusha/B99D-8ED3/ssh
+  494  cp -r ~/.ssh/ /media/anusha/B99D-8ED3/ssh
+  495  cd /data/DigitalNest/src/rails/colligo
+  496  rvm list
+  497  rails -v
+  498  vim Gemfile
+  499  vim Gemfile.lock 
+  500  cd /data/DigitalNest/src/webber_server/
+  501  git status
+  502  git pull origin develop
+  503  git status
+  504  git mergetool proxy_scripts/processOutput.py
+  505  git status
+  506  git rebase --continue
+  507  git status
+  508  git log
+  509  git status
+  510  rm proxy_scripts/processOutput.py.orig
+  511  grep -rl ELASTIC_SEARCH_HOST ./*
+  512  git status
+  513  git add docs/api.md 
+  514  git commit -m "Updated API docs"
+  515  git push origin develop 
+  516  source /data/DigitalNest/VirtualEnvironments/webber/bin/activate
+  517  python webber/app.py 
+  518  cd webber
+  519  ls -l
+  520  cd ..
+  521  ls -l webber/core.py
+  522  s -l
+  523  ls -l
+  524  ls -l webber
+  525  rm webber/core.pyc 
+  526  python app.py 
+  527  python webber/app.py 
+  528  python
+  529  pip install -e .
+  530  deactivate
+  531  rm -r /data/DigitalNest/VirtualEnvironments/webber/
+  532  virtualenv /data/DigitalNest/virtualEnvironments/webber
+  533  source /data/DigitalNest/virtualEnvironments/webber/bin/activate
+  534  pip inatll -e
+  535  pip install -e .
+  536  python webber/app.py 
+  537  python webber/app.py 
+  538  history >> /data/history.txt

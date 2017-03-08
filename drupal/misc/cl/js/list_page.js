@@ -1,0 +1,1 @@
+../../../../service/static/js/list_page.js

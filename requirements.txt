@@ -1,0 +1,15 @@
+# In order to install [service name] you need to run
+# pip install -r requirements.txt
+# (i.e. target this file with the -r switch on pip).
+
+# install esprit from submodule directory
+-e esprit/
+
+# install octopus from submodue directory
+-e magnificent-octopus/
+
+# install python swordv2 client from submodule directory
+-e python-client-sword2/
+
+# now run the normal setup.py and get all the normal PyPI dependencies from there
+-e .

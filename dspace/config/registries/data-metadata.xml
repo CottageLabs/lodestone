@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+
+<dspace-dc-types>
+
+    <dspace-header>
+        <title>Metadata Types Registry for Datasets</title>
+        <contributor.author>Richard Jones</contributor.author>
+        <date.created>2016-09-07</date.created>
+        <description>
+            This file contains bibliographic metadata explicitly required by the
+            Dataset deposit interface
+        </description>
+    </dspace-header>
+
+    <dc-schema>
+        <name>dc</name>
+        <namespace>http://purl.org/dc/elements/1.1/</namespace>
+    </dc-schema>
+
+    <dc-schema>
+        <name>dcterms</name>
+        <namespace>http://purl.org/dc/terms/</namespace>
+    </dc-schema>
+
+    <dc-schema>
+        <name>datacite</name>
+        <namespace>http://datacite.org/schema/kernel-4</namespace>
+    </dc-schema>
+
+    <dc-type>
+        <schema>dc</schema>
+        <element>title</element>
+        <scope_note>title</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>dc</schema>
+        <element>contributor</element>
+        <qualifier>author</qualifier>
+        <scope_note>authors.last_name, authors.first_name</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>dc</schema>
+        <element>contributor</element>
+        <qualifier>orcid</qualifier>
+        <scope_note>authors.last_name, authors.first_name [authors.orcid]</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>dc</schema>
+        <element>description</element>
+        <scope_note>description</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>dc</schema>
+        <element>format</element>
+        <scope_note>software used to create one or more of the files</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>dc</schema>
+        <element>identifier</element>
+        <qualifier>doi</qualifier>
+        <scope_note>DOI</scope_note>
+    </dc-type>
+    
+    <dc-type>
+        <schema>dc</schema>
+        <element>subject</element>
+        <scope_note>keywords</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>dc</schema>
+        <element>publisher</element>
+        <qualifier>department</qualifier>
+        <scope_note>department</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>dc</schema>
+        <element>rights</element>
+        <scope_note>licence.name OR rights</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>dc</schema>
+        <element>rights</element>
+        <qualifier>uri</qualifier>
+        <scope_note>licence.uri OR appropriate URI for licence name</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>dc</schema>
+        <element>type</element>
+        <scope_note>Item type (e.g. Dataset)</scope_note>
+    </dc-type>
+
+
+
+    <dc-type>
+        <schema>dcterms</schema>
+        <element>accessrights</element>
+        <scope_note>accessrights</scope_note>
+    </dc-type>
+
+
+    <dc-type>
+        <schema>datacite</schema>
+        <element>iscitedby</element>
+        <qualifier>doi</qualifier>
+        <scope_note>iscitedby (if value is a DOI)</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>datacite</schema>
+        <element>iscitedby</element>
+        <qualifier>url</qualifier>
+        <scope_note>iscitedby (if value is not a DOI)</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>datacite</schema>
+        <element>contributor</element>
+        <qualifier>supervisor</qualifier>
+        <scope_note>authors.last_name, authors.first_name</scope_note>
+    </dc-type>
+
+
+</dspace-dc-types>

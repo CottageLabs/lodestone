@@ -1,0 +1,210 @@
+<a href="{{back_link}}">Back to list page</a>
+
+{{#if title}}
+    <h1>{{title}}</h1>
+{{else}}
+    <h1>{{id}}</h1>
+{{/if}}
+<dl class="dl-horizontal">
+    <h2>Background</h2>
+    <dt>Project funded by or in collaboration <br/>with an external entity</dt>
+    {{#if external_funding}}
+        <dd><span class="glyphicon glyphicon-ok success" aria-hidden="true"></span> Yes</dd>
+        <dd>The data was created in a project funded by an external entity or in collaboration with an external entity</dd>
+    {{else}}
+        <dd><span class="glyphicon glyphicon-remove failure" aria-hidden="true"></span> No</dd>
+        <dd>The data was not created in a project funded by an external entity or in collaboration with an external entity</dd>
+    {{/if}}
+
+    <dt>Confidential/restricted information</dt>
+    {{#if confidential_information}}
+        <dd><span class="glyphicon glyphicon-ok success" aria-hidden="true"></span> Yes</dd>
+        <dd>The data does contain personal/sensitive, commercially-sensitive or other forms of confidential/restricted information</dd>
+    {{else}}
+        <dd><span class="glyphicon glyphicon-remove failure" aria-hidden="true"></span> No</dd>
+        <dd>The data does not contain personal/sensitive, commercially-sensitive or other forms of confidential/restricted information</dd>
+    {{/if}}
+    {{#if accessrights}}
+        <dt>Nature of confidential/restricted <br/>information in your data</dt>
+        <dd>{{accessrights}}</dd>
+    {{/if}}
+
+    <dt>Rights to share confirmation</dt>
+    {{#if confirm_sharing_rights}}
+        <dd><span class="glyphicon glyphicon-ok success" aria-hidden="true"></span> Yes</dd>
+        <dd>I confirm that I have the rights to share these data via the University Research Repository.</dd>
+    {{else}}
+        <dd><span class="glyphicon glyphicon-remove failure" aria-hidden="true"></span> No</dd>
+        <dd>Sharing right <i>I confirm that I have the rights to share these data via the University Research Repository.</i> not confirmed</dd>
+    {{/if}}
+
+    <dt>Status of your submission</dt>
+    {{#if confirm_sharing_rights}}
+        <dd>This is a placeholder record - I will make changes to it</dd>
+    {{else}}
+        <dd>This is a final record - I do not foresee any additional changes</dd>
+    {{/if}}
+    <hr/>
+
+    <h2>Related Publication</h2>
+    <dt>Has supporting publication</dt>
+    {{#if has_publication}}
+        <dd><span class="glyphicon glyphicon-ok success" aria-hidden="true"></span> Yes</dd>
+        {{#if publicationtitle}}
+            <dt>Title of your publication</dt>
+            <dd>{{publicationtitle}}</dd>
+        {{/if}}
+        {{#if journal_name}}
+            <dt>Name of the journal</dt>
+            <dd>{{journal_name}}</dd>
+        {{/if}}
+        {{#if iscitedby}}
+            <dt>Link to your publication</dt>
+            <dd><a href="{{iscitedby}}">{{iscitedby}}</a></dd>
+        {{/if}}
+        <dt>Publication already published</dt>
+        {{#if publication_published}}
+            <dd><span class="glyphicon glyphicon-ok success" aria-hidden="true"></span> Yes</dd>
+        {{else}}
+            <dd><span class="glyphicon glyphicon-remove failure" aria-hidden="true"></span> No</dd>
+            <dt>Data needs to be embargoed until <br/>your publication is published</dt>
+            {{#if embargo}}
+                <dd><span class="glyphicon glyphicon-ok success" aria-hidden="true"></span> Yes</dd>
+            {{else}}
+                <dd><span class="glyphicon glyphicon-remove failure" aria-hidden="true"></span> No</dd>
+            {{/if}}
+            <dt>I understand that reviewers won't have access to <br>embargoed files</dt>
+            {{#if peerreviewaccess}}
+                <dd><span class="glyphicon glyphicon-ok success" aria-hidden="true"></span> Yes</dd>
+            {{else}}
+                <dd><span class="glyphicon glyphicon-remove failure" aria-hidden="true"></span> No</dd>
+            {{/if}}
+            {{#if publication_date}}
+                <dt>Publication date</dt>
+                <dd>{{publication_date}}</dd>
+            {{/if}}
+        {{/if}}
+    {{else}}
+        <dd><span class="glyphicon glyphicon-remove failure" aria-hidden="true"></span> No</dd>
+    {{/if}}
+
+    <h2>Information about your data</h2>
+    <dt>Title</dt><dd>{{title}}</dd>
+    {{#if doi}}
+        <dt>DOI</dt><dd>{{doi}}</dd>
+    {{/if}}
+    <dt>Description</dt><dd>{{description}}</dd>
+    <dt>Keywords</dt><dd>
+    {{#each keywords}}
+        {{this}}<br/>
+    {{/each}}
+    </dd>
+    <dt>Additional information</dt><dd>{{additionalinfo}}</dd>
+
+    {{#if license.uri}}
+        <dt>Rights</dt><dd><a href="{{license.uri}}">{{license.text}}</a></dd>
+    {{else}}
+        <dt>Rights</dt><dd>{{license.text}}</dd>
+    {{/if}}
+
+    <dt>Publicise information about your data <br/> via our Twitter account</dt>
+    {{#if publicise}}
+        <dd><span class="glyphicon glyphicon-ok success" aria-hidden="true"></span> Yes</dd>
+        {{#if twitter}}
+            <dt>Twitter handles</dt>
+            <dd>{{twitter}}</dd>
+        {{/if}}
+    {{else}}
+        <dd><span class="glyphicon glyphicon-remove failure" aria-hidden="true"></span> No</dd>
+    {{/if}}
+
+
+    <h3>Authors</h3>
+    {{#each authors}}
+        <dt>First name</dt><dd>{{given_names}}</dd>
+        <dt>Last name</dt><dd>{{family_name}}</dd>
+        <dt>ORCID</dt><dd>{{orcid}}</dd>
+        <dt>Supervisor</dt>
+        <dd>
+        {{#if supervisor}}
+            <span class="glyphicon glyphicon-ok success" aria-hidden="true"></span> Yes
+        {{else}}
+            <span class="glyphicon glyphicon-remove failure" aria-hidden="true"></span> No
+        {{/if}}
+        </dd>
+        <br/>
+    {{/each}}
+
+    {{#if resources}}
+        <h3>Related resources</h3>
+        {{#each resources}}
+            <dt>Resource Type</dt><dd>{{type}}</dd>
+            <dt>URL</dt><dd><a href="{{url}}">{{url}}</a></dd>
+            <br/>
+        {{/each}}
+    {{/if}}
+
+    {{#if funders}}
+        <h3>Funders</h3>
+        {{#each funders}}
+            <dt>Funder name</dt><dd>{{name}}</dd>
+            <dt>Project ID</dt><dd>{{project_id}}</dd>
+            <br/>
+        {{/each}}
+    {{/if}}
+
+    <h3>About you</h3>
+    <dt>First name</dt><dd>{{given_names}}</dd>
+    <dt>Last name</dt><dd>{{family_name}}</dd>
+    <dt>Department / institute</dt><dd>{{department}}</dd>
+    <dt>Currently employed or studying <br/> at the University of XXXXXX</dt>
+    {{#if currently_employed}}
+        <dd><span class="glyphicon glyphicon-ok success" aria-hidden="true"></span> Yes</dd>
+    {{else}}
+        <dd><span class="glyphicon glyphicon-remove failure" aria-hidden="true"></span> No</dd>
+    {{/if}}
+    {{#if crsid}}
+        <dt>CRSid</dt><dd>{{crsid}}</dd>
+    {{/if}}
+    {{#if externalemail}}
+        <dt>Non-Institutional email address</dt><dd>{{externalemail}}</dd>
+    {{/if}}
+    {{#if software_information}}
+        <dt>Useful information about software required to<br> open/process your data files</dt><dd>{{software_information}}</dd>
+    {{/if}}
+    <hr/>
+
+    {{#if files}}
+        <h2>Files</h2>
+        {{#each files}}
+            {{#if visible}}
+                <h3><a href="{{access_url}}">{{file_name}}</a></h3>
+                <dt>File format</dt><dd>{{file_format}}</dd>
+                <dt>Software</dt><dd>{{software}}</dd>
+            {{/if}}
+        {{/each}}
+        <hr>
+    {{/if}}
+
+    <dt>Data deposition accepted</dt>
+    {{#if terms_and_conditions}}
+        <dd><span class="glyphicon glyphicon-ok success" aria-hidden="true"></span> Yes</dd>
+        <dd>I have read and accepted the data deposition <a href="http://osc.xxxxxxx.ac.uk/repository/repository-terms-use">terms and conditions</a></dd>
+    {{else}}
+        <dd><span class="glyphicon glyphicon-remove failure" aria-hidden="true"></span> No</dd>
+        <dd>I have not read or accepted the data deposition <a href="http://osc.xxxxxxx.ac.uk/repository/repository-terms-use">terms and conditions</a></dd>
+    {{/if}}
+
+    <h2>Submission Details</h2>
+    <dt>Status</dt><dd>{{status.display}}</dd>
+    <dt>Created</dt><dd>{{human_created_date}}</dd>
+    <dt>Last updated</dt><dd>{{human_last_updated}}</dd>
+    {{#if user_auth}}
+      {{#if user_auth.name}}
+          <dt>User</dt><dd>{{user_auth.name}}</dd>
+      {{/if}}
+    {{/if}}
+    {{#if remote_repository_url}}
+    <dt>Repository URL</dt><dd><a href="{{remote_repository_url}}">{{remote_repository_url}}</a></dd>
+    {{/if}}
+</dl>
