@@ -3,7 +3,7 @@
 	url = https://github.com/CottageLabs/esprit.git
 [submodule "magnificent-octopus"]
 	path = magnificent-octopus
-	url = https://github.com/richard-jones/magnificent-octopus
+	url = https://github.com/richard-jones/magnificent-octopus.git
 [submodule "python-client-sword2"]
 	path = python-client-sword2
 	url = https://github.com/swordapp/python-client-sword2.git
