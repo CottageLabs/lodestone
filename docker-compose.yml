@@ -1,0 +1,20 @@
+version: '2.1'
+
+services:
+
+  redis:
+    image: redis:3.2
+    command: [ "redis-server", "--appendonly yes" ]
+    volumes:
+      - redis_data:/data
+    ports:
+      - "7000:6379"
+
+  lodestone:
+    build: .
+    volumes:
+      - lodestone_filestore:/data
+
+volumes:
+  redis_data: {}
+  lodestone_filestore: {}

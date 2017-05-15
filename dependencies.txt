@@ -1,0 +1,7 @@
+# In order to install the dependencies for this app you need to run
+# pip install -r dependencies.txt
+# (i.e. target this file with the -r switch on pip).
+
+esprit
+octopus
+sword2
